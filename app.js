@@ -19,7 +19,7 @@ function init() {
   currentPlan = generatePlan(new Date(), planOffset);
   render();
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/sw.js').catch(() => {});
+    navigator.serviceWorker.register('./sw.js').catch(() => {});
   }
 }
 
