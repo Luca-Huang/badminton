@@ -1,0 +1,35 @@
+:root {
+  --primary: #059669;
+  --primary-light: #d1fae5;
+  --bg: #111827;
+  --bg-card: #1f2937;
+  --text: #f9fafb;
+  --text-secondary: #9ca3af;
+  --danger: #ef4444;
+  --success: #10b981;
+  --warning: #f59e0b;
+  --border: #374151;
+  --radius: 16px;
+  --radius-sm: 8px;
+  --safe-top: env(safe-area-inset-top);
+  --safe-bottom: env(safe-area-inset-bottom);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100dvh;
+  padding-top: var(--safe-top);
+  -webkit-font-smoothing: antialiased;
+}
+
+#app {
+  max-width: 430px;
+  margin: 0 auto;
+  padding-bottom: calc(80px + var(--safe-bottom));
+}
