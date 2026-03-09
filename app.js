@@ -1,6 +1,7 @@
 import { MODULES } from './exercises.js';
 import { generatePlan, formatDate, estimateExerciseDuration } from './planner.js';
 import { normalizeExerciseText } from './exercise-text.js';
+import { getVideoSlots, hasVideoContent } from './video-presenter.js';
 
 // ── 状态 ────────────────────────────────────────────────
 const STORAGE_KEY = 'badminton-pwa-v1';
@@ -126,18 +127,14 @@ function renderCooldownCard(cooldown, idx) {
 function renderExerciseCard(ex, idx, total) {
   const done = doneSet.has(idx);
   const mod  = MODULES[ex.module] || { name: '', color: '#666' };
-  const hasVideo = ex.videoSide && ex.videoFront;
+  const slots = getVideoSlots(ex);
+  const hasVideo = hasVideoContent(ex);
   const text = normalizeExerciseText(ex);
 
   const videoHtml = hasVideo
     ? `<div class="video-box">
-        <video autoplay loop muted playsinline preload="none">
-          <source src="${ex.videoSide}" type="video/mp4">
-        </video>
-        <video autoplay loop muted playsinline preload="none">
-          <source src="${ex.videoFront}" type="video/mp4">
-        </video>
-       </div>`
+        ${slots.map(slot => renderVideoSlot(slot, ex.name)).join('')}
+      </div>`
     : `<div class="video-placeholder">
         <div class="icon">🏃</div>
         <div>无视频演示，请参考文字说明</div>
@@ -215,6 +212,8 @@ function showCard(idx) {
 
 // ── 事件绑定 ─────────────────────────────────────────────
 function attachEvents() {
+  bindVideoState();
+
   // 设置按钮
   document.getElementById('btn-settings')?.addEventListener('click', renderSettings);
 
@@ -288,6 +287,48 @@ function attachEvents() {
 
   // 滑动手势
   initSwipe();
+}
+
+function renderVideoSlot(slot, exerciseName) {
+  const posterAttr = slot.fallbackImage ? ` poster="${slot.fallbackImage}"` : '';
+  return `
+    <div class="video-frame" data-video-frame="${slot.key}">
+      <div class="video-skeleton">
+        <div class="pulse"></div>
+        <span>${slot.label} 加载中</span>
+      </div>
+      <video autoplay loop muted playsinline preload="metadata"${posterAttr} data-video>
+        <source src="${slot.src}" type="video/mp4">
+      </video>
+      <div class="video-fallback">
+        <div class="icon">⚠️</div>
+        <div>${slot.label}视频加载失败</div>
+        <div class="hint">请参考下方动作要领：${exerciseName}</div>
+      </div>
+    </div>`;
+}
+
+function bindVideoState() {
+  document.querySelectorAll('[data-video-frame]').forEach(frame => {
+    const video = frame.querySelector('video');
+    if (!video) return;
+
+    const markReady = () => {
+      frame.classList.remove('error');
+      frame.classList.add('ready');
+    };
+    const markError = () => {
+      frame.classList.remove('ready');
+      frame.classList.add('error');
+    };
+
+    video.addEventListener('loadeddata', markReady, { once: true });
+    video.addEventListener('canplay', markReady, { once: true });
+    video.addEventListener('error', markError, { once: true });
+
+    const source = video.querySelector('source');
+    if (!source?.src) markError();
+  });
 }
 
 // ── 计时器 ───────────────────────────────────────────────

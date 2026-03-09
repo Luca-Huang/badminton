@@ -1,11 +1,14 @@
 // Service Worker - 羽毛球体能训练 PWA
-const CACHE_NAME = 'badminton-v1';
+const CACHE_NAME = 'badminton-v2';
 const SHELL_FILES = [
   './',
   './index.html',
   './style.css',
   './app.js',
   './exercises.js',
+  './exercise-text.js',
+  './video-presenter.js',
+  './data/exercises.mw.js',
   './planner.js',
   './manifest.json',
   './icons/icon-192.png',
