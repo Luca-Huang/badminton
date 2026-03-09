@@ -6,6 +6,16 @@
 
 ---
 
+## 最近更新（2026-03-09）
+
+- 动作库扩充为 30 个动作（5 模块 × 6），并接入离线同步脚本自动更新
+- 前端默认使用本地动作库（`data/exercises.mw.js`），运行时不调用 MuscleWiki API
+- 动作说明文案增加中文兜底逻辑，避免出现英文提示
+- 视频区新增骨架屏与失败兜底提示，加载失败时可继续按文字训练
+- Service Worker 缓存清单升级到 `v2`，纳入新增模块文件
+
+---
+
 ## 设计背景
 
 网上羽毛球训练教程繁杂，缺乏系统性；健身房训练动作与羽毛球专项能力脱节。本项目参考以下运动科学研究，将训练动作与羽毛球实战能力直接挂钩：
@@ -136,3 +146,11 @@ node scripts/sync-mw-library.mjs --out data/exercises.mw.json
 - **视频**：MuscleWiki 公开 MP4（`autoplay loop muted playsinline`）
 - **PWA**：Web App Manifest + Service Worker
 - **部署**：GitHub Pages
+
+---
+
+## 发布说明
+
+- 本项目使用 GitHub Pages，线上内容跟随 `main` 分支更新
+- 本地完成验证后，执行 `git push origin main` 即可触发线上更新
+- 页面通常在 1-3 分钟内生效；若未更新可强刷浏览器缓存
