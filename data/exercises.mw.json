@@ -1,0 +1,1116 @@
+{
+  "generatedAt": "2026-03-09T07:46:22.929Z",
+  "note": "Generated from MuscleWiki API. Runtime app should read local data to avoid API quota usage.",
+  "modules": {
+    "core": [
+      {
+        "id": "side-plank-up-down",
+        "module": "core",
+        "name": "侧平板支撑",
+        "why": "提升躯干抗侧屈稳定，增强击球稳定性",
+        "sets": 3,
+        "reps": "45秒/侧",
+        "rest": 30,
+        "tips": [
+          "Start with your elbow and hip on the ground. Either neutral fist or flat hand on the ground.",
+          "Begin in a side plank position, and then drop your hips to the floor.",
+          "Pull your hips back to the ceiling to finish the rep."
+        ],
+        "mistakes": [
+          "动作过程中保持核心收紧",
+          "避免借力摆动代偿"
+        ],
+        "videoSide": "https://media.musclewiki.com/media/uploads/videos/branded/male-bodyweight-side-plank-up-down-side.mp4",
+        "videoFront": "https://media.musclewiki.com/media/uploads/videos/branded/male-bodyweight-side-plank-up-down-front.mp4",
+        "fallbackImageSide": "",
+        "fallbackImageFront": "",
+        "source": {
+          "id": 274,
+          "name": "Side Plank Up Down",
+          "category": "Bodyweight",
+          "difficulty": "Intermediate",
+          "primary_muscles": [
+            "Obliques"
+          ]
+        }
+      },
+      {
+        "id": "laying-leg-raises",
+        "module": "core",
+        "name": "仰卧举腿",
+        "why": "强化核心屈髋与收腹能力，服务杀球发力链",
+        "sets": 3,
+        "reps": "8-12次",
+        "rest": 60,
+        "tips": [
+          "Lay on your back with your arms palms down on either side.",
+          "Keep your legs together and as straight as possible.",
+          "Slowly raise your legs to a 90° angle, pause at this position, or as high as you can reach your legs, and then slowly lower your legs back down."
+        ],
+        "mistakes": [
+          "动作过程中保持核心收紧",
+          "避免借力摆动代偿"
+        ],
+        "videoSide": "https://media.musclewiki.com/media/uploads/videos/branded/male-Bodyweight-laying-leg-raises-side.mp4",
+        "videoFront": "https://media.musclewiki.com/media/uploads/videos/branded/male-Bodyweight-laying-leg-raises-front.mp4",
+        "fallbackImageSide": "",
+        "fallbackImageFront": "",
+        "source": {
+          "id": 30,
+          "name": "Laying Leg Raises",
+          "category": "Bodyweight",
+          "difficulty": "Novice",
+          "primary_muscles": [
+            "Abdominals"
+          ]
+        }
+      },
+      {
+        "id": "kettlebell-russian-twist",
+        "module": "core",
+        "name": "俄罗斯转体",
+        "why": "提升躯干旋转速度与控制能力",
+        "sets": 3,
+        "reps": "16次(左右共)",
+        "rest": 45,
+        "tips": [
+          "Sit on the floor with your legs bent, knees together and feet raised slightly off the floor.",
+          "Starting on one side and sitting up straight with your core muscles engaged, lift the kettlebell off the floor with both hands and bring it across your body to the other side, rotating your chest towards the floor as you do so.",
+          "Tap the kettlebell lightly on the floor and bring the kettlebell back across your body to the starting position, rotating your chest towards the floor."
+        ],
+        "mistakes": [
+          "动作过程中保持核心收紧",
+          "避免借力摆动代偿"
+        ],
+        "videoSide": "https://media.musclewiki.com/media/uploads/videos/branded/male-Kettlebells-kettlebell-russian-twist-side.mp4",
+        "videoFront": "https://media.musclewiki.com/media/uploads/videos/branded/male-Kettlebells-kettlebell-russian-twist-front.mp4",
+        "fallbackImageSide": "",
+        "fallbackImageFront": "",
+        "source": {
+          "id": 46,
+          "name": "Kettlebell Russian Twist",
+          "category": "Kettlebells",
+          "difficulty": "Novice",
+          "primary_muscles": [
+            "Obliques"
+          ]
+        }
+      },
+      {
+        "id": "cable-wood-chopper",
+        "module": "core",
+        "name": "绳索砍木",
+        "why": "模拟挥拍旋转链路，强化斜向爆发",
+        "sets": 3,
+        "reps": "10次/侧",
+        "rest": 60,
+        "tips": [
+          "Set the cable at about nipple level. Use a handle attachment.",
+          "Face sideways, then rotate your torso with your arms extended against the resistance.",
+          "After completing your given number of reps, face the opposite direction and repeat."
+        ],
+        "mistakes": [
+          "动作过程中保持核心收紧",
+          "避免借力摆动代偿"
+        ],
+        "videoSide": "https://media.musclewiki.com/media/uploads/videos/branded/male-cable-woodchopper-side.mp4",
+        "videoFront": "https://media.musclewiki.com/media/uploads/videos/branded/male-cable-woodchopper-front.mp4",
+        "fallbackImageSide": "",
+        "fallbackImageFront": "",
+        "source": {
+          "id": 203,
+          "name": "Cable Wood Chopper",
+          "category": "Cables",
+          "difficulty": "Beginner",
+          "primary_muscles": [
+            "Obliques"
+          ]
+        }
+      },
+      {
+        "id": "dead-bug",
+        "module": "core",
+        "name": "死虫",
+        "why": "提升核心抗伸展能力，减少腰代偿",
+        "sets": 3,
+        "reps": "10次/侧",
+        "rest": 45,
+        "tips": [
+          "Lie on your back, arms extended upward, legs raised with knees bent.",
+          "Lower opposite arm and leg to floor, keeping back pressed against ground.",
+          "Alternate sides, maintain core engagement, and repeat for desired reps or time."
+        ],
+        "mistakes": [
+          "动作过程中保持核心收紧",
+          "避免借力摆动代偿"
+        ],
+        "videoSide": "https://media.musclewiki.com/media/uploads/videos/branded/male-Bodyweight-dead-bug-side.mp4",
+        "videoFront": "https://media.musclewiki.com/media/uploads/videos/branded/male-Bodyweight-dead-bug-front.mp4",
+        "fallbackImageSide": "",
+        "fallbackImageFront": "",
+        "source": {
+          "id": 784,
+          "name": "Dead Bug",
+          "category": "Bodyweight",
+          "difficulty": "Novice",
+          "primary_muscles": [
+            "Abdominals"
+          ]
+        }
+      },
+      {
+        "id": "cable-pallof-press",
+        "module": "core",
+        "name": "Pallof抗旋推",
+        "why": "提升抗旋稳定，增强变向时躯干控制",
+        "sets": 3,
+        "reps": "10次/侧",
+        "rest": 45,
+        "tips": [
+          "Use a handle attachment, set the cable at nipple level, walk a few steps away, and face sideways.",
+          "Start with both hands on the handle and your fists against your chest.",
+          "Press the handle forward until your elbows are fully extended, then pull the handle back to your chest."
+        ],
+        "mistakes": [
+          "动作过程中保持核心收紧",
+          "避免借力摆动代偿"
+        ],
+        "videoSide": "https://media.musclewiki.com/media/uploads/videos/branded/male-Cables-cable-pallof-press-side.mp4",
+        "videoFront": "https://media.musclewiki.com/media/uploads/videos/branded/male-Cables-cable-pallof-press-front.mp4",
+        "fallbackImageSide": "",
+        "fallbackImageFront": "",
+        "source": {
+          "id": 206,
+          "name": "Cable Pallof Press",
+          "category": "Cables",
+          "difficulty": "Beginner",
+          "primary_muscles": [
+            "Obliques"
+          ]
+        }
+      }
+    ],
+    "legs": [
+      {
+        "id": "bulgarian-split-squat",
+        "module": "legs",
+        "name": "保加利亚分腿蹲",
+        "why": "模拟弓步接球发力，强化单腿力量",
+        "sets": 3,
+        "reps": "8次/腿",
+        "rest": 90,
+        "tips": [
+          "Stand with your back to a bench (or raised surface) and place one of your feet on the bench.",
+          "Squat down until your front leg is about parallel to the floor.",
+          "Go back to the starting position. After completing the desired amount of reps, switch legs and repeat."
+        ],
+        "mistakes": [
+          "膝盖方向与脚尖一致",
+          "避免塌腰或重心前冲"
+        ],
+        "videoSide": "https://media.musclewiki.com/media/uploads/videos/branded/male-Bodyweight-bulgarian-split-squat-side.mp4",
+        "videoFront": "https://media.musclewiki.com/media/uploads/videos/branded/male-Bodyweight-bulgarian-split-squat-front.mp4",
+        "fallbackImageSide": "",
+        "fallbackImageFront": "",
+        "source": {
+          "id": 33,
+          "name": "Bulgarian Split Squat",
+          "category": "Bodyweight",
+          "difficulty": "Beginner",
+          "primary_muscles": [
+            "Glutes",
+            "Quads"
+          ]
+        }
+      },
+      {
+        "id": "barbell-squat",
+        "module": "legs",
+        "name": "杠铃深蹲",
+        "why": "构建下肢力量基础，支撑起跳与急停",
+        "sets": 4,
+        "reps": "6-8次",
+        "rest": 120,
+        "tips": [
+          "Stand with your feet shoulder-width apart. Maintain the natural arch in your back, squeezing your shoulder blades and raising your chest.",
+          "Grip the bar across your shoulders and support it on your upper back. Unwrack the bar by straightening your legs, and take a step back.",
+          "Bend your knees as you lower the weight without altering the form of your back until your hips are below your knees."
+        ],
+        "mistakes": [
+          "膝盖方向与脚尖一致",
+          "避免塌腰或重心前冲"
+        ],
+        "videoSide": "https://media.musclewiki.com/media/uploads/videos/branded/male-Barbell-barbell-squat-side.mp4",
+        "videoFront": "https://media.musclewiki.com/media/uploads/videos/branded/male-Barbell-barbell-squat-front.mp4",
+        "fallbackImageSide": "",
+        "fallbackImageFront": "",
+        "source": {
+          "id": 6,
+          "name": "Barbell Squat",
+          "category": "Barbell",
+          "difficulty": "Intermediate",
+          "primary_muscles": [
+            "Quads"
+          ]
+        }
+      },
+      {
+        "id": "landmine-single-leg-romanian-deadlift",
+        "module": "legs",
+        "name": "单腿罗马尼亚硬拉",
+        "why": "提升后链与单腿稳定，减少膝踝代偿",
+        "sets": 3,
+        "reps": "8次/腿",
+        "rest": 75,
+        "tips": [
+          "Grab the end of the landmine and stand perpendicular to the bar.",
+          "Lift your inside leg and keep your outside leg planted.",
+          "Push your hips back keeping your knees mostly extended. When you feel the stretch in your hams, push your hips forward until you are standing upright."
+        ],
+        "mistakes": [
+          "膝盖方向与脚尖一致",
+          "避免塌腰或重心前冲"
+        ],
+        "videoSide": "https://media.musclewiki.com/media/uploads/videos/branded/male-Barbell-landmine-single-leg-romanian-deadlift-side.mp4",
+        "videoFront": "https://media.musclewiki.com/media/uploads/videos/branded/male-Barbell-landmine-single-leg-romanian-deadlift-front.mp4",
+        "fallbackImageSide": "",
+        "fallbackImageFront": "",
+        "source": {
+          "id": 704,
+          "name": "Landmine Single Leg Romanian Deadlift",
+          "category": "Barbell",
+          "difficulty": "Intermediate",
+          "primary_muscles": [
+            "Glutes",
+            "Gluteus Maximus",
+            "Hamstrings",
+            "Lateral Hamstrings"
+          ]
+        }
+      },
+      {
+        "id": "dumbbell-goblet-squat",
+        "module": "legs",
+        "name": "高脚杯深蹲",
+        "why": "强化髋膝协同，提升下肢耐力",
+        "sets": 3,
+        "reps": "10次",
+        "rest": 75,
+        "tips": [
+          "Hold the weight tucked into your upper chest area, keeping your elbows in. Your feet should be slightly wider than shoulder width.",
+          "Sink down into the squat, keeping your elbows inside the track of your knees.",
+          "Push through your heels while keeping your chest up and return to starting position."
+        ],
+        "mistakes": [
+          "膝盖方向与脚尖一致",
+          "避免塌腰或重心前冲"
+        ],
+        "videoSide": "https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-goblet-squat-side.mp4",
+        "videoFront": "https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-goblet-squat-front.mp4",
+        "fallbackImageSide": "",
+        "fallbackImageFront": "",
+        "source": {
+          "id": 9,
+          "name": "Dumbbell Goblet Squat",
+          "category": "Dumbbells",
+          "difficulty": "Novice",
+          "primary_muscles": [
+            "Glutes",
+            "Quads"
+          ]
+        }
+      },
+      {
+        "id": "walking-lunge",
+        "module": "legs",
+        "name": "行进弓步",
+        "why": "提升跨步稳定与连续蹬地能力",
+        "sets": 3,
+        "reps": "10步/腿",
+        "rest": 75,
+        "tips": [
+          "Take a step forward shifting your weight onto the front leg.",
+          "Bend the knee of the front leg so the knee of the back leg comes close to the ground.",
+          "Stand up and go into lunging with the opposite leg."
+        ],
+        "mistakes": [
+          "膝盖方向与脚尖一致",
+          "避免塌腰或重心前冲"
+        ],
+        "videoSide": "https://media.musclewiki.com/media/uploads/videos/branded/male-Recovery-lunge-walking-side.mp4",
+        "videoFront": "https://media.musclewiki.com/media/uploads/videos/branded/male-Recovery-lunge-walking-front.mp4",
+        "fallbackImageSide": "",
+        "fallbackImageFront": "",
+        "source": {
+          "id": 1208,
+          "name": "Walking Lunge",
+          "category": "Bodyweight",
+          "difficulty": "Intermediate",
+          "primary_muscles": [
+            "Glutes",
+            "Quads"
+          ]
+        }
+      },
+      {
+        "id": "kettlebell-step-up",
+        "module": "legs",
+        "name": "登台提膝",
+        "why": "强化单腿蹬伸和落地控制",
+        "sets": 3,
+        "reps": "8次/腿",
+        "rest": 75,
+        "tips": [
+          "Standing up straight, using a bench as a step, raise one foot onto the bench and hold the kettlebell in the same arm as the straight leg.",
+          "Stand and bring both feet onto the bench. Slowly lower your leg back down to the starting position.",
+          "Repeat."
+        ],
+        "mistakes": [
+          "膝盖方向与脚尖一致",
+          "避免塌腰或重心前冲"
+        ],
+        "videoSide": "https://media.musclewiki.com/media/uploads/videos/branded/male-Kettlebells-kettlebell-step-up-side.mp4",
+        "videoFront": "https://media.musclewiki.com/media/uploads/videos/branded/male-Kettlebells-kettlebell-step-up-front.mp4",
+        "fallbackImageSide": "",
+        "fallbackImageFront": "",
+        "source": {
+          "id": 87,
+          "name": "Kettlebell Step Up",
+          "category": "Kettlebells",
+          "difficulty": "Beginner",
+          "primary_muscles": [
+            "Glutes",
+            "Quads"
+          ]
+        }
+      }
+    ],
+    "agility": [
+      {
+        "id": "bodyweight-lateral-lunge-jump",
+        "module": "agility",
+        "name": "侧向弓步跳",
+        "why": "提升横向蹬地爆发与落地稳定",
+        "sets": 3,
+        "reps": "8次/侧",
+        "rest": 60,
+        "tips": [
+          "Start with a shoulder width stance.",
+          "Jump laterally and fall into a squat. Tap the ground.",
+          "Jump the opposite direction"
+        ],
+        "mistakes": [
+          "落地先稳再起动",
+          "避免触地时间过长"
+        ],
+        "videoSide": "https://media.musclewiki.com/media/uploads/videos/branded/male-Bodyweight-bodyweight-lateral-lunge-jump-side.mp4",
+        "videoFront": "https://media.musclewiki.com/media/uploads/videos/branded/male-Bodyweight-bodyweight-lateral-lunge-jump-front.mp4",
+        "fallbackImageSide": "",
+        "fallbackImageFront": "",
+        "source": {
+          "id": 967,
+          "name": "Bodyweight Lateral Lunge Jump",
+          "category": "Bodyweight",
+          "difficulty": "Intermediate",
+          "primary_muscles": [
+            "Glutes",
+            "Quads"
+          ]
+        }
+      },
+      {
+        "id": "depth-jump",
+        "module": "agility",
+        "name": "反应性着地跳",
+        "why": "缩短触地时间，提升伸缩循环效率",
+        "sets": 3,
+        "reps": "5次",
+        "rest": 90,
+        "tips": [
+          "Stand on top of a box. Step off of the box and land on the floor.",
+          "Land as softly as possible. Squat as you land to minimise impact on your joints.",
+          "Go straight into another hop after you've landed. This will help you learn to absorb impact."
+        ],
+        "mistakes": [
+          "落地先稳再起动",
+          "避免触地时间过长"
+        ],
+        "videoSide": "https://media.musclewiki.com/media/uploads/videos/branded/male-Bodyweight-depth-jump-side.mp4",
+        "videoFront": "https://media.musclewiki.com/media/uploads/videos/branded/male-Bodyweight-depth-jump-front.mp4",
+        "fallbackImageSide": "",
+        "fallbackImageFront": "",
+        "source": {
+          "id": 635,
+          "name": "Depth Jump",
+          "category": "Bodyweight",
+          "difficulty": "Intermediate",
+          "primary_muscles": [
+            "Glutes",
+            "Quads"
+          ]
+        }
+      },
+      {
+        "id": "bodyweight-alternating-jump-lunge",
+        "module": "agility",
+        "name": "交替分腿跳",
+        "why": "提升前后步法切换速度与弹性",
+        "sets": 3,
+        "reps": "10次(左右共)",
+        "rest": 75,
+        "tips": [
+          "Start in a standing position.",
+          "Lunge forward, switch legs mid-air.",
+          "Land and repeat."
+        ],
+        "mistakes": [
+          "落地先稳再起动",
+          "避免触地时间过长"
+        ],
+        "videoSide": "https://media.musclewiki.com/media/uploads/videos/branded/male-Bodyweight-bodyweight-alternating-jump-lunge-side.mp4",
+        "videoFront": "https://media.musclewiki.com/media/uploads/videos/branded/male-Bodyweight-bodyweight-alternating-jump-lunge-front.mp4",
+        "fallbackImageSide": "",
+        "fallbackImageFront": "",
+        "source": {
+          "id": 964,
+          "name": "Bodyweight Alternating Jump Lunge",
+          "category": "Bodyweight",
+          "difficulty": "Intermediate",
+          "primary_muscles": [
+            "Glutes",
+            "Quads"
+          ]
+        }
+      },
+      {
+        "id": "box-jump",
+        "module": "agility",
+        "name": "箱跳",
+        "why": "强化垂直爆发与髋膝踝协同",
+        "sets": 3,
+        "reps": "6次",
+        "rest": 90,
+        "tips": [
+          "Stand in front of a box.",
+          "*Start with a low box if this is your first time*",
+          "Sink into a quarter of half squat and then pop your hips forward."
+        ],
+        "mistakes": [
+          "落地先稳再起动",
+          "避免触地时间过长"
+        ],
+        "videoSide": "https://media.musclewiki.com/media/uploads/videos/branded/male-Bodyweight-box-jump-side.mp4",
+        "videoFront": "https://media.musclewiki.com/media/uploads/videos/branded/male-Bodyweight-box-jump-front.mp4",
+        "fallbackImageSide": "",
+        "fallbackImageFront": "",
+        "source": {
+          "id": 634,
+          "name": "Box Jump",
+          "category": "Bodyweight",
+          "difficulty": "Beginner",
+          "primary_muscles": [
+            "Glutes",
+            "Quads"
+          ]
+        }
+      },
+      {
+        "id": "cardio-skater",
+        "module": "agility",
+        "name": "滑冰跳",
+        "why": "提升侧向移动与单腿制动能力",
+        "sets": 3,
+        "reps": "10次/侧",
+        "rest": 75,
+        "tips": [
+          "Stand, balance on right foot, left foot behind, slightly bent knees.",
+          "Jump to left, landing on left foot, right foot behind, swinging arms.",
+          "Continue leaping side-to-side, maintaining balance and speed, like a speed skater."
+        ],
+        "mistakes": [
+          "落地先稳再起动",
+          "避免触地时间过长"
+        ],
+        "videoSide": "https://media.musclewiki.com/media/uploads/videos/branded/male-Cardio-cardio-skater-side.mp4",
+        "videoFront": "https://media.musclewiki.com/media/uploads/videos/branded/male-Cardio-cardio-skater-front.mp4",
+        "fallbackImageSide": "",
+        "fallbackImageFront": "",
+        "source": {
+          "id": 1006,
+          "name": "Cardio Skater",
+          "category": "Cardio",
+          "difficulty": "Beginner",
+          "primary_muscles": [
+            "Glutes"
+          ]
+        }
+      },
+      {
+        "id": "cardio-lateral-shuffle",
+        "module": "agility",
+        "name": "侧向滑步",
+        "why": "提升步频与防守还原速度",
+        "sets": 4,
+        "reps": "20秒",
+        "rest": 40,
+        "tips": [
+          "Start with a wide stance.",
+          "Shuffle sideways for a specified distance while maintaining a quarter squat position."
+        ],
+        "mistakes": [
+          "落地先稳再起动",
+          "避免触地时间过长"
+        ],
+        "videoSide": "https://media.musclewiki.com/media/uploads/videos/branded/male-Cardio-cardio-lateral-shuffle-side.mp4",
+        "videoFront": "https://media.musclewiki.com/media/uploads/videos/branded/male-Cardio-cardio-lateral-shuffle-front.mp4",
+        "fallbackImageSide": "",
+        "fallbackImageFront": "",
+        "source": {
+          "id": 994,
+          "name": "Cardio Lateral Shuffle",
+          "category": "Cardio",
+          "difficulty": "Beginner",
+          "primary_muscles": [
+            "Calves",
+            "Glutes",
+            "Quads"
+          ]
+        }
+      }
+    ],
+    "cardio": [
+      {
+        "id": "kettlebell-swing",
+        "module": "cardio",
+        "name": "壶铃摆荡",
+        "why": "提升髋部爆发和抗疲劳能力",
+        "sets": 4,
+        "reps": "15次",
+        "rest": 60,
+        "tips": [
+          "Stand with your feet slightly wider than shoulder width apart holding the kettlebell between your legs, with your knees slightly bent.",
+          "Keeping your back straight, swing the kettlebell upwards until the kettlebell is level with your chest and carefully lower.",
+          "Repeat"
+        ],
+        "mistakes": [
+          "保持呼吸节奏",
+          "动作幅度优先于盲目提速"
+        ],
+        "videoSide": "https://media.musclewiki.com/media/uploads/videos/branded/male-Kettlebells-kettlebell-swing-side.mp4",
+        "videoFront": "https://media.musclewiki.com/media/uploads/videos/branded/male-Kettlebells-kettlebell-swing-front.mp4",
+        "fallbackImageSide": "",
+        "fallbackImageFront": "",
+        "source": {
+          "id": 67,
+          "name": "Kettlebell Swing",
+          "category": "Kettlebells",
+          "difficulty": "Intermediate",
+          "primary_muscles": [
+            "Glutes",
+            "Hamstrings"
+          ]
+        }
+      },
+      {
+        "id": "burpee",
+        "module": "cardio",
+        "name": "波比跳",
+        "why": "提升全身功率输出和心肺耐力",
+        "sets": 3,
+        "reps": "10次",
+        "rest": 90,
+        "tips": [
+          "Start standing with your feet hip-width apart. Lower your body into a squat position, placing your hands on the ground in front of you.",
+          "Quickly jump your feet back into a plank position, keeping your body in a straight line from your head to your toes.",
+          "Perform a push-up, keeping your core tight and your elbows close to your body."
+        ],
+        "mistakes": [
+          "保持呼吸节奏",
+          "动作幅度优先于盲目提速"
+        ],
+        "videoSide": "https://media.musclewiki.com/media/uploads/videos/branded/male-bodyweight-burpee-side.mp4",
+        "videoFront": "https://media.musclewiki.com/media/uploads/videos/branded/male-bodyweight-burpee-front.mp4",
+        "fallbackImageSide": "",
+        "fallbackImageFront": "",
+        "source": {
+          "id": 422,
+          "name": "Burpee",
+          "category": "Bodyweight",
+          "difficulty": "Intermediate",
+          "primary_muscles": [
+            "Abdominals",
+            "Chest"
+          ]
+        }
+      },
+      {
+        "id": "mountain-climber",
+        "module": "cardio",
+        "name": "登山跑",
+        "why": "模拟比赛高强度间歇，强化核心耐力",
+        "sets": 4,
+        "reps": "30秒",
+        "rest": 30,
+        "tips": [
+          "To perform a bodyweight mountain climber, start in a plank position with your hands placed directly under your shoulders.",
+          "Bring your right knee towards your chest, keeping your foot close to your hand. Quickly switch legs, bringing your left knee towards your chest.",
+          "Continue this movement, alternating legs, at a quick pace for a set amount of time or repetitions."
+        ],
+        "mistakes": [
+          "保持呼吸节奏",
+          "动作幅度优先于盲目提速"
+        ],
+        "videoSide": "https://media.musclewiki.com/media/uploads/videos/branded/male-bodyweight-mountain-climber-side.mp4",
+        "videoFront": "https://media.musclewiki.com/media/uploads/videos/branded/male-bodyweight-mountain-climber-front.mp4",
+        "fallbackImageSide": "",
+        "fallbackImageFront": "",
+        "source": {
+          "id": 421,
+          "name": "Mountain Climber",
+          "category": "Bodyweight",
+          "difficulty": "Novice",
+          "primary_muscles": [
+            "Abdominals"
+          ]
+        }
+      },
+      {
+        "id": "jump-rope",
+        "module": "cardio",
+        "name": "跳绳",
+        "why": "提升足踝弹性与节奏耐力",
+        "sets": 4,
+        "reps": "45秒",
+        "rest": 30,
+        "tips": [
+          "Hold handles, elbows close, and jump with both feet together.",
+          "Rotate wrists to swing the rope over your head.",
+          "Jump as it reaches your feet, keeping a steady rhythm."
+        ],
+        "mistakes": [
+          "保持呼吸节奏",
+          "动作幅度优先于盲目提速"
+        ],
+        "videoSide": "https://media.musclewiki.com/media/uploads/videos/branded/male-Cardio-jump-rope-side.mp4",
+        "videoFront": "https://media.musclewiki.com/media/uploads/videos/branded/male-Cardio-jump-rope-front.mp4",
+        "fallbackImageSide": "",
+        "fallbackImageFront": "",
+        "source": {
+          "id": 1414,
+          "name": "Jump Rope",
+          "category": "Cardio",
+          "difficulty": "Beginner",
+          "primary_muscles": [
+            "Calves"
+          ]
+        }
+      },
+      {
+        "id": "plow-back-rowing-preps",
+        "module": "cardio",
+        "name": "划船机冲刺",
+        "why": "强化心肺与后链耐力",
+        "sets": 6,
+        "reps": "30秒冲刺",
+        "rest": 30,
+        "tips": [
+          "Sit tall with legs extended, arms holding straps forward.",
+          "Begin with arms long, shoulders relaxed and chest open.",
+          "Pull arms down and back in a plow motion, engaging lats."
+        ],
+        "mistakes": [
+          "保持呼吸节奏",
+          "动作幅度优先于盲目提速"
+        ],
+        "videoSide": "https://media.musclewiki.com/media/uploads/videos/branded/male-Pilates-plow-back-rowing-preps-side.mp4",
+        "videoFront": "https://media.musclewiki.com/media/uploads/videos/branded/male-Pilates-plow-back-rowing-preps-front.mp4",
+        "fallbackImageSide": "",
+        "fallbackImageFront": "",
+        "source": {
+          "id": 1794,
+          "name": "Plow Back Rowing Preps",
+          "category": "Pilates",
+          "difficulty": "Novice",
+          "primary_muscles": [
+            "Traps (mid-back)",
+            "Forearms",
+            "Lats",
+            "Rear Shoulders"
+          ]
+        }
+      },
+      {
+        "id": "cardio-assault-bike",
+        "module": "cardio",
+        "name": "风阻单车冲刺",
+        "why": "提升无氧阈值与恢复能力",
+        "sets": 6,
+        "reps": "20秒冲刺",
+        "rest": 40,
+        "tips": [
+          "Adjust seat and handlebar height for comfort and proper posture on the assault bike.",
+          "Start pedaling with even, controlled motion, maintaining your desired resistance level.",
+          "Monitor heart rate and intensity; increase or decrease resistance for an effective cardio workout."
+        ],
+        "mistakes": [
+          "保持呼吸节奏",
+          "动作幅度优先于盲目提速"
+        ],
+        "videoSide": "https://media.musclewiki.com/media/uploads/videos/branded/male-Cardio-cardio-assault-bike-side.mp4",
+        "videoFront": "https://media.musclewiki.com/media/uploads/videos/branded/male-Cardio-cardio-assault-bike-front.mp4",
+        "fallbackImageSide": "",
+        "fallbackImageFront": "",
+        "source": {
+          "id": 977,
+          "name": "Cardio Assault Bike",
+          "category": "Cardio",
+          "difficulty": "Novice",
+          "primary_muscles": [
+            "Glutes",
+            "Quads"
+          ]
+        }
+      }
+    ],
+    "upper": [
+      {
+        "id": "band-face-pull",
+        "module": "upper",
+        "name": "面拉",
+        "why": "强化肩胛稳定，降低肩部受伤风险",
+        "sets": 3,
+        "reps": "12-15次",
+        "rest": 45,
+        "tips": [
+          "Anchor the band at eye level. Take a few steps away until the band is taut.",
+          "Use an overhand grip with both hands. Pull the band to the bridge of your nose flaring your elbows out."
+        ],
+        "mistakes": [
+          "肩胛先稳定再发力",
+          "避免耸肩和代偿"
+        ],
+        "videoSide": "https://media.musclewiki.com/media/uploads/videos/branded/male-Band-band-face-pull-side.mp4",
+        "videoFront": "https://media.musclewiki.com/media/uploads/videos/branded/male-Band-band-face-pull-front.mp4",
+        "fallbackImageSide": "",
+        "fallbackImageFront": "",
+        "source": {
+          "id": 211,
+          "name": "Band Face Pull",
+          "category": "Band",
+          "difficulty": "Novice",
+          "primary_muscles": [
+            "Shoulders",
+            "Posterior Deltoid",
+            "Rear Shoulders"
+          ]
+        }
+      },
+      {
+        "id": "pull-ups",
+        "module": "upper",
+        "name": "引体向上",
+        "why": "强化上背与拉力链，支持挥拍加速",
+        "sets": 3,
+        "reps": "6-10次",
+        "rest": 90,
+        "tips": [
+          "Grasp the bar with an overhand grip, arms and shoulders fully extended.",
+          "Pull your body up until your chin is above the bar.",
+          "Lower your body back to starting position."
+        ],
+        "mistakes": [
+          "肩胛先稳定再发力",
+          "避免耸肩和代偿"
+        ],
+        "videoSide": "https://media.musclewiki.com/media/uploads/videos/branded/male-bodyweight-pullup-side.mp4",
+        "videoFront": "https://media.musclewiki.com/media/uploads/videos/branded/male-bodyweight-pullup-front.mp4",
+        "fallbackImageSide": "",
+        "fallbackImageFront": "",
+        "source": {
+          "id": 19,
+          "name": "Pull Ups",
+          "category": "Bodyweight",
+          "difficulty": "Intermediate",
+          "primary_muscles": [
+            "Lats"
+          ]
+        }
+      },
+      {
+        "id": "dumbbell-cuban-press",
+        "module": "upper",
+        "name": "哑铃推举",
+        "why": "提升肩带输出与上肢稳定",
+        "sets": 3,
+        "reps": "8-10次",
+        "rest": 75,
+        "tips": [
+          "Perform an upright row until elbows are bent at 90 degrees and arms parallel to the ground.",
+          "Rotate your shoulders, raising the dumbbells overhead. Then press overhead."
+        ],
+        "mistakes": [
+          "肩胛先稳定再发力",
+          "避免耸肩和代偿"
+        ],
+        "videoSide": "https://media.musclewiki.com/media/uploads/videos/branded/male-Dumbbells-dumbbell-cuban-press-side.mp4",
+        "videoFront": "https://media.musclewiki.com/media/uploads/videos/branded/male-Dumbbells-dumbbell-cuban-press-front.mp4",
+        "fallbackImageSide": "",
+        "fallbackImageFront": "",
+        "source": {
+          "id": 1446,
+          "name": "Dumbbell Cuban Press",
+          "category": "Dumbbells",
+          "difficulty": "Intermediate",
+          "primary_muscles": [
+            "Front Shoulders"
+          ]
+        }
+      },
+      {
+        "id": "dumbbell-external-rotation",
+        "module": "upper",
+        "name": "肩外旋",
+        "why": "强化肩袖稳定，做肩伤预防",
+        "sets": 3,
+        "reps": "12次/侧",
+        "rest": 45,
+        "tips": [
+          "Hold a dumbbell in one hand,  elbow bent at 90 degrees while resting on your inner thigh/ knee.",
+          "Rotate your arm outward, keeping your elbow stable."
+        ],
+        "mistakes": [
+          "肩胛先稳定再发力",
+          "避免耸肩和代偿"
+        ],
+        "videoSide": "https://media.musclewiki.com/media/uploads/videos/branded/male-Dumbbells-dumbbell-external-rotation-side.mp4",
+        "videoFront": "https://media.musclewiki.com/media/uploads/videos/branded/male-Dumbbells-dumbbell-external-rotation-front.mp4",
+        "fallbackImageSide": "",
+        "fallbackImageFront": "",
+        "source": {
+          "id": 1428,
+          "name": "Dumbbell External Rotation",
+          "category": "Dumbbells",
+          "difficulty": "Beginner",
+          "primary_muscles": [
+            "Rear Shoulders"
+          ]
+        }
+      },
+      {
+        "id": "scapular-protraction",
+        "module": "upper",
+        "name": "肩胛俯卧撑",
+        "why": "增强前锯肌激活与肩胛控制",
+        "sets": 3,
+        "reps": "12次",
+        "rest": 45,
+        "tips": [
+          "From the standing or seated position straighten your back.",
+          "Pull the shoulders back but keep them relaxed.",
+          "Move shoulders forward and return to the starting, relaxed position."
+        ],
+        "mistakes": [
+          "肩胛先稳定再发力",
+          "避免耸肩和代偿"
+        ],
+        "videoSide": "https://media.musclewiki.com/media/uploads/videos/branded/male-Recovery-scapular-protraction-side.mp4",
+        "videoFront": "https://media.musclewiki.com/media/uploads/videos/branded/male-Recovery-scapular-protraction-front.mp4",
+        "fallbackImageSide": "",
+        "fallbackImageFront": "",
+        "source": {
+          "id": 1136,
+          "name": "Scapular Protraction",
+          "category": "Recovery",
+          "difficulty": "Novice",
+          "primary_muscles": []
+        }
+      },
+      {
+        "id": "trx-y-raise",
+        "module": "upper",
+        "name": "Y字上举",
+        "why": "提升下斜方肌参与，改善肩部控制",
+        "sets": 3,
+        "reps": "10次",
+        "rest": 45,
+        "tips": [
+          "Hold the TRX straps and lean away from the anchor point until the straps are taut.",
+          "Keep both elbows mostly extended and raise both arms out and upwards.",
+          "You should make a Y shape with your arms during the back portion of the exercise."
+        ],
+        "mistakes": [
+          "肩胛先稳定再发力",
+          "避免耸肩和代偿"
+        ],
+        "videoSide": "https://media.musclewiki.com/media/uploads/videos/branded/male-trx-y-raise-side.mp4",
+        "videoFront": "https://media.musclewiki.com/media/uploads/videos/branded/male-trx-y-raise-front.mp4",
+        "fallbackImageSide": "",
+        "fallbackImageFront": "",
+        "source": {
+          "id": 559,
+          "name": "TRX Y Raise",
+          "category": "TRX",
+          "difficulty": "Beginner",
+          "primary_muscles": [
+            "Shoulders",
+            "Lateral Deltoid",
+            "Anterior Deltoid",
+            "Front Shoulders"
+          ]
+        }
+      }
+    ]
+  },
+  "mapping": [
+    {
+      "module": "core",
+      "query": "Side Plank",
+      "matched": "Side Plank Up Down"
+    },
+    {
+      "module": "core",
+      "query": "Laying Leg Raises",
+      "matched": "Laying Leg Raises"
+    },
+    {
+      "module": "core",
+      "query": "Russian Twist",
+      "matched": "Kettlebell Russian Twist"
+    },
+    {
+      "module": "core",
+      "query": "Cable Wood Chop",
+      "matched": "Cable Wood Chopper"
+    },
+    {
+      "module": "core",
+      "query": "Dead Bug",
+      "matched": "Dead Bug"
+    },
+    {
+      "module": "core",
+      "query": "Pallof Press",
+      "matched": "Cable Pallof Press"
+    },
+    {
+      "module": "legs",
+      "query": "Bulgarian Split Squat",
+      "matched": "Bulgarian Split Squat"
+    },
+    {
+      "module": "legs",
+      "query": "Barbell Squat",
+      "matched": "Barbell Squat"
+    },
+    {
+      "module": "legs",
+      "query": "Single Leg Romanian Deadlift",
+      "matched": "Landmine Single Leg Romanian Deadlift"
+    },
+    {
+      "module": "legs",
+      "query": "Dumbbell Goblet Squat",
+      "matched": "Dumbbell Goblet Squat"
+    },
+    {
+      "module": "legs",
+      "query": "Walking Lunge",
+      "matched": "Walking Lunge"
+    },
+    {
+      "module": "legs",
+      "query": "Step Up",
+      "matched": "Kettlebell Step Up"
+    },
+    {
+      "module": "agility",
+      "query": "Bodyweight Lateral Lunge Jump",
+      "matched": "Bodyweight Lateral Lunge Jump"
+    },
+    {
+      "module": "agility",
+      "query": "Depth Jump",
+      "matched": "Depth Jump"
+    },
+    {
+      "module": "agility",
+      "query": "Bodyweight Alternating Jump Lunge",
+      "matched": "Bodyweight Alternating Jump Lunge"
+    },
+    {
+      "module": "agility",
+      "query": "Box Jump",
+      "matched": "Box Jump"
+    },
+    {
+      "module": "agility",
+      "query": "Cardio Skater",
+      "matched": "Cardio Skater"
+    },
+    {
+      "module": "agility",
+      "query": "Lateral Shuffle",
+      "matched": "Cardio Lateral Shuffle"
+    },
+    {
+      "module": "cardio",
+      "query": "Kettlebell Swing",
+      "matched": "Kettlebell Swing"
+    },
+    {
+      "module": "cardio",
+      "query": "Burpee",
+      "matched": "Burpee"
+    },
+    {
+      "module": "cardio",
+      "query": "Mountain Climber",
+      "matched": "Mountain Climber"
+    },
+    {
+      "module": "cardio",
+      "query": "Jump Rope",
+      "matched": "Jump Rope"
+    },
+    {
+      "module": "cardio",
+      "query": "Rowing",
+      "matched": "Plow Back Rowing Preps"
+    },
+    {
+      "module": "cardio",
+      "query": "Cardio Assault Bike",
+      "matched": "Cardio Assault Bike"
+    },
+    {
+      "module": "upper",
+      "query": "Face Pull",
+      "matched": "Band Face Pull"
+    },
+    {
+      "module": "upper",
+      "query": "Pull Up",
+      "matched": "Pull Ups"
+    },
+    {
+      "module": "upper",
+      "query": "Dumbbell Shoulder Press",
+      "matched": "Dumbbell Cuban Press"
+    },
+    {
+      "module": "upper",
+      "query": "External Rotation",
+      "matched": "Dumbbell External Rotation"
+    },
+    {
+      "module": "upper",
+      "query": "Scapular Protraction",
+      "matched": "Scapular Protraction"
+    },
+    {
+      "module": "upper",
+      "query": "Y Raise",
+      "matched": "TRX Y Raise"
+    }
+  ]
+}

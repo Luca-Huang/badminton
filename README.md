@@ -107,6 +107,27 @@ npx serve .
 
 ---
 
+## MuscleWiki 免费档用法（离线同步）
+
+为避免运行时消耗 API 配额，仓库提供了离线同步脚本：
+
+```bash
+# 1) 设置 API Key（不要写入仓库）
+export MW_API_KEY='mw_xxxxxxxxxxxxx'
+
+# 2) 同步 30 个动作到本地库（默认含 30 天缓存）
+node scripts/sync-mw-library.mjs --out data/exercises.mw.json
+```
+
+- 输出文件：`data/exercises.mw.json` 和 `data/exercises.mw.js`
+- 前端默认读取：`data/exercises.mw.js`（`exercises.js` 已接入）
+- 本地缓存目录：`.cache/mw-api/`（已在 `.gitignore` 忽略）
+- 可通过 `MW_CACHE_DAYS` 调整缓存天数，例如 `MW_CACHE_DAYS=7`
+
+> 说明：免费档是每月 500 次调用。该脚本在离线生成阶段消耗额度，前端运行时不调用 API。
+
+---
+
 ## 技术栈
 
 - **纯原生**：HTML / CSS / JavaScript（ES Modules），无框架，无构建工具

@@ -1,5 +1,6 @@
 import { MODULES } from './exercises.js';
 import { generatePlan, formatDate, estimateExerciseDuration } from './planner.js';
+import { normalizeExerciseText } from './exercise-text.js';
 
 // ── 状态 ────────────────────────────────────────────────
 const STORAGE_KEY = 'badminton-pwa-v1';
@@ -126,6 +127,7 @@ function renderExerciseCard(ex, idx, total) {
   const done = doneSet.has(idx);
   const mod  = MODULES[ex.module] || { name: '', color: '#666' };
   const hasVideo = ex.videoSide && ex.videoFront;
+  const text = normalizeExerciseText(ex);
 
   const videoHtml = hasVideo
     ? `<div class="video-box">
@@ -180,11 +182,11 @@ function renderExerciseCard(ex, idx, total) {
       <div class="tips-section">
         <h3>动作要领</h3>
         <ul class="tips-list">
-          ${ex.tips.map(t => `<li>${t}</li>`).join('')}
+          ${text.tips.map(t => `<li>${t}</li>`).join('')}
         </ul>
         <h3 style="margin-top:10px">常见错误</h3>
         <ul class="tips-list mistakes">
-          ${ex.mistakes.map(m => `<li>${m}</li>`).join('')}
+          ${text.mistakes.map(m => `<li>${m}</li>`).join('')}
         </ul>
       </div>
 
