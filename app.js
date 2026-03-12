@@ -1,7 +1,7 @@
 import { MODULES } from './exercises.js';
 import { generatePlan, formatDate, estimateExerciseDuration } from './planner.js';
 import { normalizeExerciseText } from './exercise-text.js';
-import { getVideoSlots, hasVideoContent } from './video-presenter.js';
+import { getVideoSlots, getPrimaryVideoSlot, hasVideoContent } from './video-presenter.js';
 
 // ── 状态 ────────────────────────────────────────────────
 const STORAGE_KEY = 'badminton-pwa-v1';
@@ -203,12 +203,9 @@ function renderExerciseCard(ex, idx, total) {
 }
 
 function renderStepRow(step) {
-  const slots = getVideoSlots(step);
-  const videoHtml = slots.length > 0
-    ? slots.map(slot => {
-      const key = `${step.id || step.name}-${slot.key}`;
-      return renderVideoSlot({ ...slot, key }, step.name);
-    }).join('')
+  const slot = getPrimaryVideoSlot(step);
+  const videoHtml = slot
+    ? renderVideoSlot({ ...slot, key: `${step.id || step.name}-${slot.key}` }, step.name)
     : `<div class="step-video-placeholder">暂无视频示范</div>`;
 
   return `

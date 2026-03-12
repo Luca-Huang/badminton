@@ -700,45 +700,11 @@
           "name": "Jump Rope",
           "category": "Cardio",
           "difficulty": "Beginner",
-          "primary_muscles": [
-            "Calves"
-          ]
-        }
-      },
-      {
-        "id": "plow-back-rowing-preps",
-        "module": "cardio",
-        "name": "划船机冲刺",
-        "why": "强化心肺与后链耐力",
-        "sets": 6,
-        "reps": "30秒冲刺",
-        "rest": 30,
-        "tips": [
-          "Sit tall with legs extended, arms holding straps forward.",
-          "Begin with arms long, shoulders relaxed and chest open.",
-          "Pull arms down and back in a plow motion, engaging lats."
-        ],
-        "mistakes": [
-          "保持呼吸节奏",
-          "动作幅度优先于盲目提速"
-        ],
-        "videoSide": "https://media.musclewiki.com/media/uploads/videos/branded/male-Pilates-plow-back-rowing-preps-side.mp4",
-        "videoFront": "https://media.musclewiki.com/media/uploads/videos/branded/male-Pilates-plow-back-rowing-preps-front.mp4",
-        "fallbackImageSide": "",
-        "fallbackImageFront": "",
-        "source": {
-          "id": 1794,
-          "name": "Plow Back Rowing Preps",
-          "category": "Pilates",
-          "difficulty": "Novice",
-          "primary_muscles": [
-            "Traps (mid-back)",
-            "Forearms",
-            "Lats",
-            "Rear Shoulders"
-          ]
-        }
-      },
+        "primary_muscles": [
+          "Calves"
+        ]
+      }
+    },
       {
         "id": "cardio-assault-bike",
         "module": "cardio",
@@ -1190,38 +1156,9 @@
         "difficulty": "Novice",
         "primary_muscles": [
           "Glutes",
-          "Quads"
-        ]
-      }
-    },
-    {
-      "id": "plow-back-rowing-preps",
-      "stepType": "warmup",
-      "focus": "general",
-      "name": "划船机热身",
-      "duration": "40秒",
-      "tips": [
-        "Sit tall with legs extended, arms holding straps forward.",
-        "Begin with arms long, shoulders relaxed and chest open.",
-        "Pull arms down and back in a plow motion, engaging lats."
-      ],
-      "mistakes": [],
-      "videoSide": "https://media.musclewiki.com/media/uploads/videos/branded/male-Pilates-plow-back-rowing-preps-side.mp4",
-      "videoFront": "https://media.musclewiki.com/media/uploads/videos/branded/male-Pilates-plow-back-rowing-preps-front.mp4",
-      "fallbackImageSide": "",
-      "fallbackImageFront": "",
-      "source": {
-        "id": 1794,
-        "name": "Plow Back Rowing Preps",
-        "category": "Pilates",
-        "difficulty": "Novice",
-        "primary_muscles": [
-          "Traps (mid-back)",
-          "Forearms",
-          "Lats",
-          "Rear Shoulders"
-        ]
-      }
+        "Quads"
+      ]
+    }
     }
   ],
   "cooldown": [

@@ -28,6 +28,12 @@ export function getVideoSlots(exercise = {}) {
   ];
 }
 
+export function getPrimaryVideoSlot(exercise = {}) {
+  const slots = getVideoSlots(exercise);
+  if (slots.length === 0) return null;
+  return slots.find(slot => slot.key === 'front') ?? slots[0];
+}
+
 export function hasVideoContent(exercise = {}) {
   return getVideoSlots(exercise).length > 0;
 }

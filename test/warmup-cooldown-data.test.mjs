@@ -26,3 +26,8 @@ test('warmup and cooldown pools exist with required fields', () => {
     assert.ok(hasVideo(step));
   });
 });
+
+test('warmup pool excludes rowing machine steps', () => {
+  const ids = new Set(WARMUP_MW.map(step => step.id));
+  assert.ok(!ids.has('plow-back-rowing-preps'));
+});

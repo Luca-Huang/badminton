@@ -28,7 +28,6 @@ export const MW_LIBRARY_BLUEPRINT = [
   { module: 'cardio', query: 'Burpee', name: '波比跳', why: '提升全身功率输出和心肺耐力', sets: 3, reps: '10次', rest: 90 },
   { module: 'cardio', query: 'Mountain Climber', name: '登山跑', why: '模拟比赛高强度间歇，强化核心耐力', sets: 4, reps: '30秒', rest: 30 },
   { module: 'cardio', query: 'Jump Rope', name: '跳绳', why: '提升足踝弹性与节奏耐力', sets: 4, reps: '45秒', rest: 30 },
-  { module: 'cardio', query: 'Rowing', name: '划船机冲刺', why: '强化心肺与后链耐力', sets: 6, reps: '30秒冲刺', rest: 30 },
   { module: 'cardio', query: 'Cardio Assault Bike', name: '风阻单车冲刺', why: '提升无氧阈值与恢复能力', sets: 6, reps: '20秒冲刺', rest: 40 },
 
   // upper
@@ -50,7 +49,6 @@ export const WARMUP_BLUEPRINT = [
   { stepType: 'warmup', focus: 'agility', query: 'Lateral Shuffle', name: '侧向滑步', duration: '40秒' },
   { stepType: 'warmup', focus: 'agility', query: 'Cardio Skater', name: '滑冰跳', duration: '40秒' },
   { stepType: 'warmup', focus: 'general', query: 'Cardio Assault Bike', name: '风阻单车热身', duration: '40秒' },
-  { stepType: 'warmup', focus: 'general', query: 'Rowing', name: '划船机热身', duration: '40秒' },
 ];
 
 export const COOLDOWN_BLUEPRINT = [
