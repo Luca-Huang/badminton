@@ -75,6 +75,7 @@ function renderTrainingDay() {
         <span>⏱ 约${totalMin}分钟</span>
         <button class="refresh-btn" id="btn-refresh">🔄 换一组</button>
       </div>
+      <div class="safety-note">顺畅呼吸，避免憋气发力</div>
     </div>
     <div class="cards-container">
       ${renderWarmupCard(warmup)}
@@ -152,6 +153,7 @@ function renderExerciseCard(ex, idx, total) {
       <div class="card-header">
         <div>
           <div style="font-size:11px;color:var(--text-secondary);margin-bottom:4px">${idx} / ${total}</div>
+          <div class="role-chip">${ex.roleLabel || ''}</div>
           <h2>${ex.name}</h2>
           <div class="why">${ex.why}</div>
         </div>
@@ -163,6 +165,11 @@ function renderExerciseCard(ex, idx, total) {
         <div class="meta-chip">${ex.sets}组<span>组数</span></div>
         <div class="meta-chip">${ex.reps}<span>次数/时间</span></div>
         <div class="meta-chip">${ex.rest}秒<span>组间休息</span></div>
+      </div>
+
+      <div class="reason-box">
+        <div class="reason-title">选择理由</div>
+        <div class="reason-text">${ex.selectionReason || ''}</div>
       </div>
 
       <div class="timer-section">
