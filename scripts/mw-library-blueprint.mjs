@@ -39,3 +39,29 @@ export const MW_LIBRARY_BLUEPRINT = [
   { module: 'upper', query: 'Scapular Protraction', name: '肩胛俯卧撑', why: '增强前锯肌激活与肩胛控制', sets: 3, reps: '12次', rest: 45 },
   { module: 'upper', query: 'Y Raise', name: 'Y字上举', why: '提升下斜方肌参与，改善肩部控制', sets: 3, reps: '10次', rest: 45 },
 ];
+
+export const WARMUP_BLUEPRINT = [
+  { stepType: 'warmup', focus: 'legs', query: 'Adductor Stretch Dynamic Standing Alternate', name: '动态内收肌拉伸', duration: '40秒' },
+  { stepType: 'warmup', focus: 'legs', query: 'Hamstring Stretch Supine Dynamic Band', name: '动态腘绳肌拉伸', duration: '40秒' },
+  { stepType: 'warmup', focus: 'core', query: 'Dead Bug', name: '死虫', duration: '40秒' },
+  { stepType: 'warmup', focus: 'core', query: 'Bodyweight Thoracic Spine Rotation', name: '胸椎旋转', duration: '40秒' },
+  { stepType: 'warmup', focus: 'upper', query: 'Scapular Protraction', name: '肩胛俯卧撑', duration: '40秒' },
+  { stepType: 'warmup', focus: 'upper', query: 'External Rotation', name: '肩外旋', duration: '40秒' },
+  { stepType: 'warmup', focus: 'agility', query: 'Lateral Shuffle', name: '侧向滑步', duration: '40秒' },
+  { stepType: 'warmup', focus: 'agility', query: 'Cardio Skater', name: '滑冰跳', duration: '40秒' },
+  { stepType: 'warmup', focus: 'general', query: 'Cardio Assault Bike', name: '风阻单车热身', duration: '40秒' },
+  { stepType: 'warmup', focus: 'general', query: 'Rowing', name: '划船机热身', duration: '40秒' },
+];
+
+export const COOLDOWN_BLUEPRINT = [
+  { stepType: 'cooldown', focus: 'legs', query: 'Hamstring Stretch Supine Static', name: '腘绳肌拉伸', duration: '30秒/侧' },
+  { stepType: 'cooldown', focus: 'legs', query: 'Kneeling Quad Stretch', name: '股四头肌拉伸', duration: '30秒/侧' },
+  { stepType: 'cooldown', focus: 'agility', query: 'Calf Stretch On Box Bilateral', name: '小腿拉伸', duration: '30秒' },
+  { stepType: 'cooldown', focus: 'agility', query: 'Gastrocnemius Stretch Unilateral On Wall', name: '腓肠肌拉伸', duration: '30秒/侧' },
+  { stepType: 'cooldown', focus: 'upper', query: 'Chest Stretch Variation Two', name: '胸大肌拉伸', duration: '30秒/侧' },
+  { stepType: 'cooldown', focus: 'upper', query: 'Shoulder Abduction Stretch', name: '肩后侧拉伸', duration: '30秒/侧' },
+  { stepType: 'cooldown', focus: 'core', query: 'Bodyweight Thoracic Spine Rotation', name: '胸椎旋转放松', duration: '30秒/侧' },
+  { stepType: 'cooldown', focus: 'general', query: 'Hip Flexor Stretch Kneeling Lunge 1', name: '髋屈肌拉伸', duration: '30秒/侧' },
+  { stepType: 'cooldown', focus: 'general', query: 'Adductor Stretch Seated Bilateral Static', name: '内收肌静态拉伸', duration: '30秒' },
+  { stepType: 'cooldown', focus: 'general', query: 'Chest Stretch Variation Three', name: '胸肩放松拉伸', duration: '30秒/侧' },
+];

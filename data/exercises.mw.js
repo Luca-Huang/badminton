@@ -959,3 +959,527 @@ export const EXERCISES_MW = {
     }
   ]
 };
+export const WARMUP_MW = [
+  {
+    "id": "adductor-stretch-dynamic-standing-alternate",
+    "stepType": "warmup",
+    "focus": "legs",
+    "name": "动态内收肌拉伸",
+    "duration": "40秒",
+    "tips": [
+      "From the standing position, use a chair/bench/box for support",
+      "Transfer your weight towards one leg by bending the knee, while keeping the opposite leg straight and the foot on the ground",
+      "Feel a stretch on the inside of the thigh (adductor) of the straight leg"
+    ],
+    "mistakes": [],
+    "videoSide": "https://media.musclewiki.com/media/uploads/videos/branded/male-Recovery-adductor-stretch-dynamic-standing-alternate-side.mp4",
+    "videoFront": "https://media.musclewiki.com/media/uploads/videos/branded/male-Recovery-adductor-stretch-dynamic-standing-alternate-front.mp4",
+    "fallbackImageSide": "",
+    "fallbackImageFront": "",
+    "source": {
+      "id": 1297,
+      "name": "Adductor Stretch Dynamic Standing Alternate",
+      "category": "Recovery",
+      "difficulty": "Beginner",
+      "primary_muscles": [
+        "Inner Thigh"
+      ]
+    }
+  },
+  {
+    "id": "hamstring-stretch-supine-dynamic-band",
+    "stepType": "warmup",
+    "focus": "legs",
+    "name": "动态腘绳肌拉伸",
+    "duration": "40秒",
+    "tips": [
+      "Place a theraband or stretch strap around your foot.",
+      "Lie back onto the ground.",
+      "Raise your leg to stretching point with the aid of the band (strap)."
+    ],
+    "mistakes": [],
+    "videoSide": "https://media.musclewiki.com/media/uploads/videos/branded/male-Recovery-hamstring-stretch-supine-dynamic-side.mp4",
+    "videoFront": "https://media.musclewiki.com/media/uploads/videos/branded/male-Recovery-hamstring-stretch-supine-dynamic-front.mp4",
+    "fallbackImageSide": "",
+    "fallbackImageFront": "",
+    "source": {
+      "id": 1074,
+      "name": "Hamstring Stretch Supine Dynamic Band",
+      "category": "Recovery",
+      "difficulty": "Beginner",
+      "primary_muscles": [
+        "Hamstrings"
+      ]
+    }
+  },
+  {
+    "id": "dead-bug",
+    "stepType": "warmup",
+    "focus": "core",
+    "name": "死虫",
+    "duration": "40秒",
+    "tips": [
+      "Lie on your back, arms extended upward, legs raised with knees bent.",
+      "Lower opposite arm and leg to floor, keeping back pressed against ground.",
+      "Alternate sides, maintain core engagement, and repeat for desired reps or time."
+    ],
+    "mistakes": [],
+    "videoSide": "https://media.musclewiki.com/media/uploads/videos/branded/male-Bodyweight-dead-bug-side.mp4",
+    "videoFront": "https://media.musclewiki.com/media/uploads/videos/branded/male-Bodyweight-dead-bug-front.mp4",
+    "fallbackImageSide": "",
+    "fallbackImageFront": "",
+    "source": {
+      "id": 784,
+      "name": "Dead Bug",
+      "category": "Bodyweight",
+      "difficulty": "Novice",
+      "primary_muscles": [
+        "Abdominals"
+      ]
+    }
+  },
+  {
+    "id": "bodyweight-thoracic-spine-rotation",
+    "stepType": "warmup",
+    "focus": "core",
+    "name": "胸椎旋转",
+    "duration": "40秒",
+    "tips": [
+      "Start on all fours then bring your chest to the ground. Place one hand on the ground in front of you. The other hand behind your head/ear.",
+      "On the side of the hand that is behind your head, rotate until your elbow is pointed at the ceiling and then hold this position."
+    ],
+    "mistakes": [],
+    "videoSide": "https://media.musclewiki.com/media/uploads/videos/branded/male-Bodyweight-bodyweight-thoracic-spine-rotation-side.mp4",
+    "videoFront": "https://media.musclewiki.com/media/uploads/videos/branded/male-Bodyweight-bodyweight-thoracic-spine-rotation-front.mp4",
+    "fallbackImageSide": "",
+    "fallbackImageFront": "",
+    "source": {
+      "id": 1390,
+      "name": "Bodyweight Thoracic Spine Rotation",
+      "category": "Bodyweight",
+      "difficulty": "Novice",
+      "primary_muscles": [
+        "Obliques"
+      ]
+    }
+  },
+  {
+    "id": "scapular-protraction",
+    "stepType": "warmup",
+    "focus": "upper",
+    "name": "肩胛俯卧撑",
+    "duration": "40秒",
+    "tips": [
+      "From the standing or seated position straighten your back.",
+      "Pull the shoulders back but keep them relaxed.",
+      "Move shoulders forward and return to the starting, relaxed position."
+    ],
+    "mistakes": [],
+    "videoSide": "https://media.musclewiki.com/media/uploads/videos/branded/male-Recovery-scapular-protraction-side.mp4",
+    "videoFront": "https://media.musclewiki.com/media/uploads/videos/branded/male-Recovery-scapular-protraction-front.mp4",
+    "fallbackImageSide": "",
+    "fallbackImageFront": "",
+    "source": {
+      "id": 1136,
+      "name": "Scapular Protraction",
+      "category": "Recovery",
+      "difficulty": "Novice",
+      "primary_muscles": []
+    }
+  },
+  {
+    "id": "dumbbell-external-rotation",
+    "stepType": "warmup",
+    "focus": "upper",
+    "name": "肩外旋",
+    "duration": "40秒",
+    "tips": [
+      "Hold a dumbbell in one hand,  elbow bent at 90 degrees while resting on your inner thigh/ knee.",
+      "Rotate your arm outward, keeping your elbow stable."
+    ],
+    "mistakes": [],
+    "videoSide": "https://media.musclewiki.com/media/uploads/videos/branded/male-Dumbbells-dumbbell-external-rotation-side.mp4",
+    "videoFront": "https://media.musclewiki.com/media/uploads/videos/branded/male-Dumbbells-dumbbell-external-rotation-front.mp4",
+    "fallbackImageSide": "",
+    "fallbackImageFront": "",
+    "source": {
+      "id": 1428,
+      "name": "Dumbbell External Rotation",
+      "category": "Dumbbells",
+      "difficulty": "Beginner",
+      "primary_muscles": [
+        "Rear Shoulders"
+      ]
+    }
+  },
+  {
+    "id": "cardio-lateral-shuffle",
+    "stepType": "warmup",
+    "focus": "agility",
+    "name": "侧向滑步",
+    "duration": "40秒",
+    "tips": [
+      "Start with a wide stance.",
+      "Shuffle sideways for a specified distance while maintaining a quarter squat position."
+    ],
+    "mistakes": [],
+    "videoSide": "https://media.musclewiki.com/media/uploads/videos/branded/male-Cardio-cardio-lateral-shuffle-side.mp4",
+    "videoFront": "https://media.musclewiki.com/media/uploads/videos/branded/male-Cardio-cardio-lateral-shuffle-front.mp4",
+    "fallbackImageSide": "",
+    "fallbackImageFront": "",
+    "source": {
+      "id": 994,
+      "name": "Cardio Lateral Shuffle",
+      "category": "Cardio",
+      "difficulty": "Beginner",
+      "primary_muscles": [
+        "Calves",
+        "Glutes",
+        "Quads"
+      ]
+    }
+  },
+  {
+    "id": "cardio-skater",
+    "stepType": "warmup",
+    "focus": "agility",
+    "name": "滑冰跳",
+    "duration": "40秒",
+    "tips": [
+      "Stand, balance on right foot, left foot behind, slightly bent knees.",
+      "Jump to left, landing on left foot, right foot behind, swinging arms.",
+      "Continue leaping side-to-side, maintaining balance and speed, like a speed skater."
+    ],
+    "mistakes": [],
+    "videoSide": "https://media.musclewiki.com/media/uploads/videos/branded/male-Cardio-cardio-skater-side.mp4",
+    "videoFront": "https://media.musclewiki.com/media/uploads/videos/branded/male-Cardio-cardio-skater-front.mp4",
+    "fallbackImageSide": "",
+    "fallbackImageFront": "",
+    "source": {
+      "id": 1006,
+      "name": "Cardio Skater",
+      "category": "Cardio",
+      "difficulty": "Beginner",
+      "primary_muscles": [
+        "Glutes"
+      ]
+    }
+  },
+  {
+    "id": "cardio-assault-bike",
+    "stepType": "warmup",
+    "focus": "general",
+    "name": "风阻单车热身",
+    "duration": "40秒",
+    "tips": [
+      "Adjust seat and handlebar height for comfort and proper posture on the assault bike.",
+      "Start pedaling with even, controlled motion, maintaining your desired resistance level.",
+      "Monitor heart rate and intensity; increase or decrease resistance for an effective cardio workout."
+    ],
+    "mistakes": [],
+    "videoSide": "https://media.musclewiki.com/media/uploads/videos/branded/male-Cardio-cardio-assault-bike-side.mp4",
+    "videoFront": "https://media.musclewiki.com/media/uploads/videos/branded/male-Cardio-cardio-assault-bike-front.mp4",
+    "fallbackImageSide": "",
+    "fallbackImageFront": "",
+    "source": {
+      "id": 977,
+      "name": "Cardio Assault Bike",
+      "category": "Cardio",
+      "difficulty": "Novice",
+      "primary_muscles": [
+        "Glutes",
+        "Quads"
+      ]
+    }
+  },
+  {
+    "id": "plow-back-rowing-preps",
+    "stepType": "warmup",
+    "focus": "general",
+    "name": "划船机热身",
+    "duration": "40秒",
+    "tips": [
+      "Sit tall with legs extended, arms holding straps forward.",
+      "Begin with arms long, shoulders relaxed and chest open.",
+      "Pull arms down and back in a plow motion, engaging lats."
+    ],
+    "mistakes": [],
+    "videoSide": "https://media.musclewiki.com/media/uploads/videos/branded/male-Pilates-plow-back-rowing-preps-side.mp4",
+    "videoFront": "https://media.musclewiki.com/media/uploads/videos/branded/male-Pilates-plow-back-rowing-preps-front.mp4",
+    "fallbackImageSide": "",
+    "fallbackImageFront": "",
+    "source": {
+      "id": 1794,
+      "name": "Plow Back Rowing Preps",
+      "category": "Pilates",
+      "difficulty": "Novice",
+      "primary_muscles": [
+        "Traps (mid-back)",
+        "Forearms",
+        "Lats",
+        "Rear Shoulders"
+      ]
+    }
+  }
+];
+export const COOLDOWN_MW = [
+  {
+    "id": "hamstring-stretch-supine-static",
+    "stepType": "cooldown",
+    "focus": "legs",
+    "name": "腘绳肌拉伸",
+    "duration": "30秒/侧",
+    "tips": [
+      "Place a theraband or stretch strap around your foot.",
+      "Lie back onto the ground.",
+      "Raise your leg to stretching point with the aid of the band (strap)."
+    ],
+    "mistakes": [],
+    "videoSide": "https://media.musclewiki.com/media/uploads/videos/branded/male-Recovery-hamstring-stretch-supine-static-side.mp4",
+    "videoFront": "https://media.musclewiki.com/media/uploads/videos/branded/male-Recovery-hamstring-stretch-supine-static-front.mp4",
+    "fallbackImageSide": "",
+    "fallbackImageFront": "",
+    "source": {
+      "id": 1161,
+      "name": "Hamstring Stretch Supine Static",
+      "category": "Recovery",
+      "difficulty": "Beginner",
+      "primary_muscles": [
+        "Hamstrings"
+      ]
+    }
+  },
+  {
+    "id": "kneeling-quad-stretch",
+    "stepType": "cooldown",
+    "focus": "legs",
+    "name": "股四头肌拉伸",
+    "duration": "30秒/侧",
+    "tips": [
+      "Sit on your heels.",
+      "Lean back onto your palms.",
+      "To increase stretch intensity lift bum off heels."
+    ],
+    "mistakes": [],
+    "videoSide": "https://media.musclewiki.com/media/uploads/videos/branded/male-Recovery-quad-stretch-kneeling-side.mp4",
+    "videoFront": "https://media.musclewiki.com/media/uploads/videos/branded/male-Recovery-quad-stretch-kneeling-front.mp4",
+    "fallbackImageSide": "",
+    "fallbackImageFront": "",
+    "source": {
+      "id": 1080,
+      "name": "Kneeling Quad Stretch",
+      "category": "Recovery",
+      "difficulty": "Beginner",
+      "primary_muscles": [
+        "Quads"
+      ]
+    }
+  },
+  {
+    "id": "calf-stretch-on-box-bilateral",
+    "stepType": "cooldown",
+    "focus": "agility",
+    "name": "小腿拉伸",
+    "duration": "30秒",
+    "tips": [
+      "Stand on a box. From the standing position, shift your weight onto the balls of one foot.",
+      "Lower the heels of your feet toward the ground, and hold the position for the duration specified",
+      "You should feel your calf stretching."
+    ],
+    "mistakes": [],
+    "videoSide": "https://media.musclewiki.com/media/uploads/videos/branded/male-Recovery-calf-stretch-on-box-bilateral-side.mp4",
+    "videoFront": "https://media.musclewiki.com/media/uploads/videos/branded/male-Recovery-calf-stretch-on-box-bilateral-front.mp4",
+    "fallbackImageSide": "",
+    "fallbackImageFront": "",
+    "source": {
+      "id": 1089,
+      "name": "Calf Stretch On Box Bilateral",
+      "category": "Recovery",
+      "difficulty": "Beginner",
+      "primary_muscles": [
+        "Calves"
+      ]
+    }
+  },
+  {
+    "id": "gastrocnemius-stretch-unilateral-on-wall",
+    "stepType": "cooldown",
+    "focus": "agility",
+    "name": "腓肠肌拉伸",
+    "duration": "30秒/侧",
+    "tips": [
+      "Stand by a wall but not too close.",
+      "Place the palms on the wall and extend one leg behind you, while slightly bending the front leg.",
+      "Push the wall in order to drive the heel of the extended leg into the ground till you feel a stretch in your calf."
+    ],
+    "mistakes": [],
+    "videoSide": "https://media.musclewiki.com/media/uploads/videos/branded/male-Recovery-gastrocnemius-stretch-unilateral-on-wall-side.mp4",
+    "videoFront": "https://media.musclewiki.com/media/uploads/videos/branded/male-Recovery-gastrocnemius-stretch-unilateral-on-wall-front.mp4",
+    "fallbackImageSide": "",
+    "fallbackImageFront": "",
+    "source": {
+      "id": 1195,
+      "name": "Gastrocnemius Stretch Unilateral On Wall",
+      "category": "Recovery",
+      "difficulty": "Beginner",
+      "primary_muscles": [
+        "Calves",
+        "Gastrocnemius"
+      ]
+    }
+  },
+  {
+    "id": "chest-stretch-variation-two",
+    "stepType": "cooldown",
+    "focus": "upper",
+    "name": "胸大肌拉伸",
+    "duration": "30秒/侧",
+    "tips": [
+      "Lay on your side with one hand just in front of you.",
+      "With a slight bend in your arm, rotate your arm around your body as slowly as possible.",
+      "Return to the starting position and then repeat on the other side."
+    ],
+    "mistakes": [],
+    "videoSide": "https://media.musclewiki.com/media/uploads/videos/branded/male-chest-stretch-variation-2-side.mp4",
+    "videoFront": "https://media.musclewiki.com/media/uploads/videos/branded/male-chest-stretch-variation-2-front.mp4",
+    "fallbackImageSide": "",
+    "fallbackImageFront": "",
+    "source": {
+      "id": 101,
+      "name": "Chest Stretch Variation Two",
+      "category": "Stretches",
+      "difficulty": "Novice",
+      "primary_muscles": [
+        "Chest"
+      ]
+    }
+  },
+  {
+    "id": "shoulder-abduction-stretch",
+    "stepType": "cooldown",
+    "focus": "upper",
+    "name": "肩后侧拉伸",
+    "duration": "30秒/侧",
+    "tips": [
+      "Stand sideways to a wall.",
+      "Raise the arm that is on the side of the wall and place the blade of the palm against the wall.",
+      "Slide your arm up over your head and step in towards the wall to increase the stretch."
+    ],
+    "mistakes": [],
+    "videoSide": "https://media.musclewiki.com/media/uploads/videos/branded/male-Recovery-shoulder-abduction-stretch-standing-side.mp4",
+    "videoFront": "https://media.musclewiki.com/media/uploads/videos/branded/male-Recovery-shoulder-abduction-stretch-standing-front.mp4",
+    "fallbackImageSide": "",
+    "fallbackImageFront": "",
+    "source": {
+      "id": 1126,
+      "name": "Shoulder Abduction Stretch",
+      "category": "Recovery",
+      "difficulty": "Novice",
+      "primary_muscles": []
+    }
+  },
+  {
+    "id": "bodyweight-thoracic-spine-rotation",
+    "stepType": "cooldown",
+    "focus": "core",
+    "name": "胸椎旋转放松",
+    "duration": "30秒/侧",
+    "tips": [
+      "Start on all fours then bring your chest to the ground. Place one hand on the ground in front of you. The other hand behind your head/ear.",
+      "On the side of the hand that is behind your head, rotate until your elbow is pointed at the ceiling and then hold this position."
+    ],
+    "mistakes": [],
+    "videoSide": "https://media.musclewiki.com/media/uploads/videos/branded/male-Bodyweight-bodyweight-thoracic-spine-rotation-side.mp4",
+    "videoFront": "https://media.musclewiki.com/media/uploads/videos/branded/male-Bodyweight-bodyweight-thoracic-spine-rotation-front.mp4",
+    "fallbackImageSide": "",
+    "fallbackImageFront": "",
+    "source": {
+      "id": 1390,
+      "name": "Bodyweight Thoracic Spine Rotation",
+      "category": "Bodyweight",
+      "difficulty": "Novice",
+      "primary_muscles": [
+        "Obliques"
+      ]
+    }
+  },
+  {
+    "id": "hip-flexor-stretch-kneeling-lunge-1",
+    "stepType": "cooldown",
+    "focus": "general",
+    "name": "髋屈肌拉伸",
+    "duration": "30秒/侧",
+    "tips": [
+      "Bring yourself to kneeling lunge position. Keep a 90° angle at knees.",
+      "Slide the front knee forward while gently leaning back.",
+      "Squeeze the glute on the side of the leg that's to the front to avoid lower back complaints."
+    ],
+    "mistakes": [],
+    "videoSide": "https://media.musclewiki.com/media/uploads/videos/branded/male-Recovery-hip-flexor-stretch-kneeling-lunge-1-side.mp4",
+    "videoFront": "https://media.musclewiki.com/media/uploads/videos/branded/male-Recovery-hip-flexor-stretch-kneeling-lunge-1-front.mp4",
+    "fallbackImageSide": "",
+    "fallbackImageFront": "",
+    "source": {
+      "id": 1301,
+      "name": "Hip Flexor Stretch Kneeling Lunge 1",
+      "category": "Recovery",
+      "difficulty": "Beginner",
+      "primary_muscles": [
+        "Quads",
+        "Rectus Femoris"
+      ]
+    }
+  },
+  {
+    "id": "adductor-stretch-seated-bilateral-static",
+    "stepType": "cooldown",
+    "focus": "general",
+    "name": "内收肌静态拉伸",
+    "duration": "30秒",
+    "tips": [
+      "Sit against a wall and bring your feet together, letting the knees spread",
+      "Once you reach the end of your range, allow gravity to do the work",
+      "If you feel that gravity isn't enough, you can apply gentle downward pressure on your knees with your palms"
+    ],
+    "mistakes": [],
+    "videoSide": "https://media.musclewiki.com/media/uploads/videos/branded/male-Recovery-adductor-stretch-seated-bilateral-static-side.mp4",
+    "videoFront": "https://media.musclewiki.com/media/uploads/videos/branded/male-Recovery-adductor-stretch-seated-bilateral-static-front.mp4",
+    "fallbackImageSide": "",
+    "fallbackImageFront": "",
+    "source": {
+      "id": 1292,
+      "name": "Adductor Stretch Seated Bilateral Static",
+      "category": "Recovery",
+      "difficulty": "Beginner",
+      "primary_muscles": [
+        "Inner Thigh"
+      ]
+    }
+  },
+  {
+    "id": "chest-stretch-variation-three",
+    "stepType": "cooldown",
+    "focus": "general",
+    "name": "胸肩放松拉伸",
+    "duration": "30秒/侧",
+    "tips": [
+      "Place your arms behind your back and clasp your hands together.",
+      "Slowly extend your elbows until they are locked then lift them away from you.",
+      "Pause in this position for a few seconds and then return them to starting position."
+    ],
+    "mistakes": [],
+    "videoSide": "https://media.musclewiki.com/media/uploads/videos/branded/male-chest-stretch-variation-3-side.mp4",
+    "videoFront": "https://media.musclewiki.com/media/uploads/videos/branded/male-chest-stretch-variation-3-front.mp4",
+    "fallbackImageSide": "",
+    "fallbackImageFront": "",
+    "source": {
+      "id": 100,
+      "name": "Chest Stretch Variation Three",
+      "category": "Stretches",
+      "difficulty": "Novice",
+      "primary_muscles": [
+        "Chest"
+      ]
+    }
+  }
+];
