@@ -89,6 +89,7 @@ function renderTrainingDay() {
 function renderWarmupCard(warmup) {
   const idx = 0;
   const done = doneSet.has(idx);
+  const stepsHtml = warmup.steps.map(step => renderStepRow(step)).join('');
   return `
     <div class="simple-card card ${currentIndex===idx?'active':''}" data-idx="${idx}">
       <div class="simple-card-header" id="warmup-toggle">
@@ -96,9 +97,9 @@ function renderWarmupCard(warmup) {
         <div class="duration">${warmup.duration} 分钟 ▾</div>
       </div>
       <div class="simple-card-body" id="warmup-body">
-        <ul class="step-list">
-          ${warmup.steps.map(s => `<li>${s.name}<span class="step-duration">${s.duration}</span></li>`).join('')}
-        </ul>
+        <div class="step-list">
+          ${stepsHtml}
+        </div>
       </div>
       <button class="complete-btn ${done?'done':''}" data-complete="${idx}">
         ${done ? '✓ 已完成' : '完成热身 →'}
@@ -108,6 +109,7 @@ function renderWarmupCard(warmup) {
 
 function renderCooldownCard(cooldown, idx) {
   const done = doneSet.has(idx);
+  const stepsHtml = cooldown.steps.map(step => renderStepRow(step)).join('');
   return `
     <div class="simple-card card ${currentIndex===idx?'active':''}" data-idx="${idx}">
       <div class="simple-card-header" id="cooldown-toggle">
@@ -115,9 +117,9 @@ function renderCooldownCard(cooldown, idx) {
         <div class="duration">${cooldown.duration} 分钟 ▾</div>
       </div>
       <div class="simple-card-body" id="cooldown-body">
-        <ul class="step-list">
-          ${cooldown.steps.map(s => `<li>${s.name}<span class="step-duration">${s.duration}</span></li>`).join('')}
-        </ul>
+        <div class="step-list">
+          ${stepsHtml}
+        </div>
       </div>
       <button class="complete-btn ${done?'done':''}" data-complete="${idx}">
         ${done ? '✓ 已完成' : '完成拉伸 ✓'}
@@ -197,6 +199,27 @@ function renderExerciseCard(ex, idx, total) {
       <button class="complete-btn ${done?'done':''}" data-complete="${idx}">
         ${done ? '✓ 已完成' : `完成第${idx}个动作 →`}
       </button>
+    </div>`;
+}
+
+function renderStepRow(step) {
+  const slots = getVideoSlots(step);
+  const videoHtml = slots.length > 0
+    ? slots.map(slot => {
+      const key = `${step.id || step.name}-${slot.key}`;
+      return renderVideoSlot({ ...slot, key }, step.name);
+    }).join('')
+    : `<div class="step-video-placeholder">暂无视频示范</div>`;
+
+  return `
+    <div class="step-row">
+      <div class="step-info">
+        <div class="step-name">${step.name}</div>
+        <div class="step-duration">${step.duration}</div>
+      </div>
+      <div class="step-videos">
+        ${videoHtml}
+      </div>
     </div>`;
 }
 
