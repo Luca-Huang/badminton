@@ -1,4 +1,4 @@
-import { EXERCISES_MW } from './data/exercises.mw.js';
+import { EXERCISES_MW, WARMUP_MW, COOLDOWN_MW } from './data/exercises.mw.js';
 
 export const MODULES = {
   core: { name: '核心旋转力量', icon: '🎯', color: '#f59e0b' },
@@ -10,6 +10,8 @@ export const MODULES = {
 
 // 使用离线同步生成的动作库，避免运行时消耗 API 配额。
 export const EXERCISES = EXERCISES_MW;
+export const WARMUP_STEPS = WARMUP_MW;
+export const COOLDOWN_STEPS = COOLDOWN_MW;
 
 export const WARMUP = {
   name: '动态热身',
