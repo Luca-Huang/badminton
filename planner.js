@@ -1,4 +1,4 @@
-import { EXERCISES, WEEKLY_SCHEDULE, WARMUP, COOLDOWN } from './exercises.js';
+import { EXERCISES, WEEKLY_SCHEDULE, WARMUP, COOLDOWN, WARMUP_STEPS, COOLDOWN_STEPS } from './exercises.js';
 import { getRole, getSafetyTags, buildSelectionReason, ROLE_LABELS } from './exercise-profile.js';
 
 const TRAINING_PROFILE = {
@@ -64,6 +64,67 @@ function getRolePool(role, list) {
   }
 }
 
+function focusFromRole(role) {
+  if (role === 'knee' || role === 'hip') return 'legs';
+  if (role === 'core') return 'core';
+  if (role === 'upper') return 'upper';
+  return 'agility';
+}
+
+function buildFocusSteps(exercises) {
+  const focuses = exercises.map(ex => focusFromRole(ex.role));
+  const unique = focuses.filter((item, idx) => focuses.indexOf(item) === idx);
+  if (unique.length === 1) return [unique[0], unique[0], unique[0]];
+  if (unique.length === 2) return [unique[0], unique[0], unique[1]];
+  return unique.slice(0, 3);
+}
+
+function pickSteps(pool, focusList, seed) {
+  const result = [];
+  const used = new Set();
+  const byFocus = focus => pool.filter(step => step.focus === focus);
+
+  focusList.forEach((focus, i) => {
+    const list = byFocus(focus);
+    if (list.length === 0) return;
+    let idx = Math.floor(seededRandom(seed + i * 13) * list.length);
+    let attempts = 0;
+    while (used.has(list[idx].id) && attempts < list.length) {
+      idx = (idx + 1) % list.length;
+      attempts++;
+    }
+    if (!used.has(list[idx].id)) {
+      result.push(list[idx]);
+      used.add(list[idx].id);
+    }
+  });
+
+  const general = byFocus('general');
+  if (general.length > 0) {
+    let idx = Math.floor(seededRandom(seed + 77) * general.length);
+    let attempts = 0;
+    while (used.has(general[idx].id) && attempts < general.length) {
+      idx = (idx + 1) % general.length;
+      attempts++;
+    }
+    if (!used.has(general[idx].id)) {
+      result.push(general[idx]);
+      used.add(general[idx].id);
+    }
+  }
+
+  while (result.length < 4 && pool.length > 0) {
+    const idx = Math.floor(seededRandom(seed + result.length * 17) * pool.length);
+    const fallback = pool[idx];
+    if (!used.has(fallback.id)) {
+      result.push(fallback);
+      used.add(fallback.id);
+    }
+  }
+
+  return result.slice(0, 4);
+}
+
 /**
  * 生成指定日期的训练计划
  * @param {Date} date
@@ -106,6 +167,12 @@ export function generatePlan(date, offset = 0) {
       selectionReason: buildSelectionReason(ex, role, tags, TRAINING_PROFILE),
     };
   });
+
+  const focusSteps = buildFocusSteps(finalizedExercises);
+  const warmupSteps = pickSteps(WARMUP_STEPS, focusSteps, seed + 200);
+  const cooldownSteps = pickSteps(COOLDOWN_STEPS, focusSteps, seed + 300);
+  const warmup = { ...WARMUP, steps: warmupSteps };
+  const cooldown = { ...COOLDOWN, steps: cooldownSteps };
   const mainMin = finalizedExercises.reduce((sum, ex) => sum + estimateExerciseDuration(ex), 0);
   const transitionMin = 4;
   const estimatedTotalMinutes = WARMUP.duration + mainMin + COOLDOWN.duration + transitionMin;
@@ -114,9 +181,9 @@ export function generatePlan(date, offset = 0) {
     isTrainingDay: true,
     theme: schedule.theme,
     modules: schedule.modules,
-    warmup: WARMUP,
+    warmup,
     exercises: finalizedExercises,
-    cooldown: COOLDOWN,
+    cooldown,
     estimatedTotalMinutes,
     date,
   };
