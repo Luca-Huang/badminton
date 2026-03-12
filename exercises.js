@@ -13,7 +13,7 @@ export const EXERCISES = EXERCISES_MW;
 
 export const WARMUP = {
   name: '动态热身',
-  duration: 5,
+  duration: 6,
   steps: [
     { name: '慢跑/原地高抬腿', duration: '60秒' },
     { name: '肩部大绕环', duration: '30秒（前后各15秒）' },
@@ -26,7 +26,7 @@ export const WARMUP = {
 
 export const COOLDOWN = {
   name: '静态拉伸',
-  duration: 5,
+  duration: 6,
   steps: [
     { name: '大腿前侧拉伸', duration: '30秒/侧' },
     { name: '大腿后侧拉伸', duration: '30秒/侧' },

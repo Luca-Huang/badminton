@@ -55,7 +55,7 @@ function renderTrainingDay() {
   const { theme, warmup, exercises, cooldown } = currentPlan;
   const totalCards = 1 + exercises.length + 1;
   const mainMin = exercises.reduce((s, e) => s + estimateExerciseDuration(e), 0);
-  const totalMin = warmup.duration + mainMin + cooldown.duration;
+  const totalMin = currentPlan.estimatedTotalMinutes ?? (warmup.duration + mainMin + cooldown.duration);
 
   const dots = [
     `<div class="progress-dot ${currentIndex===0?'active':''} ${doneSet.has(0)?'done':''}" data-idx="0">热</div>`,

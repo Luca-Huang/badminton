@@ -106,6 +106,9 @@ export function generatePlan(date, offset = 0) {
       selectionReason: buildSelectionReason(ex, role, tags, TRAINING_PROFILE),
     };
   });
+  const mainMin = finalizedExercises.reduce((sum, ex) => sum + estimateExerciseDuration(ex), 0);
+  const transitionMin = 4;
+  const estimatedTotalMinutes = WARMUP.duration + mainMin + COOLDOWN.duration + transitionMin;
 
   return {
     isTrainingDay: true,
@@ -114,6 +117,7 @@ export function generatePlan(date, offset = 0) {
     warmup: WARMUP,
     exercises: finalizedExercises,
     cooldown: COOLDOWN,
+    estimatedTotalMinutes,
     date,
   };
 }
@@ -157,7 +161,7 @@ export function formatDate(date) {
 /** 估算单个动作的训练时长（分钟） */
 export function estimateExerciseDuration(exercise) {
   const { sets, rest } = exercise;
-  const setTime = 60; // 每组约 60 秒
+  const setTime = 70; // 每组约 70 秒（含动作与小幅调整）
   const restTime = rest || 60;
   return Math.round((sets * setTime + (sets - 1) * restTime) / 60);
 }

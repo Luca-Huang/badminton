@@ -33,6 +33,7 @@ test('generatePlan returns 5 exercises with unique roles', () => {
   assert.equal(plan.exercises.length, 5);
   const roles = new Set(plan.exercises.map(e => e.role));
   assert.equal(roles.size, 5);
+  assert.ok(plan.estimatedTotalMinutes >= 45);
 });
 
 test('generatePlan avoids high IAP exercises by default', () => {
