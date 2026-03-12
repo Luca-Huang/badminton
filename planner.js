@@ -1,4 +1,12 @@
 import { EXERCISES, WEEKLY_SCHEDULE, WARMUP, COOLDOWN } from './exercises.js';
+import { getRole, getSafetyTags, buildSelectionReason, ROLE_LABELS } from './exercise-profile.js';
+
+const TRAINING_PROFILE = {
+  avoidHighIap: true,
+  avoidHighImpact: true,
+};
+
+const ROLE_ORDER = ['knee', 'hip', 'upper', 'core', 'agility'];
 
 // 基于日期的确定性随机数（同一天刷新结果不变）
 function seededRandom(seed) {
@@ -13,6 +21,47 @@ function dateSeed(date) {
 function getWeekNumber(date) {
   const start = new Date(date.getFullYear(), 0, 1);
   return Math.floor((date - start) / (7 * 24 * 60 * 60 * 1000));
+}
+
+function getWeekPhase(date) {
+  const weekNum = getWeekNumber(date);
+  return weekNum % 4; // 0 base, 1-2 build, 3 deload
+}
+
+function applyProgression(exercise, role, phase) {
+  const next = { ...exercise };
+  if (role === 'knee' || role === 'hip' || role === 'upper') {
+    if (phase === 1 || phase === 2) next.sets = exercise.sets + 1;
+    if (phase === 3) next.sets = Math.max(2, exercise.sets - 1);
+  }
+  return next;
+}
+
+function filterByProfile(list, profile) {
+  const filtered = list.filter(ex => {
+    const tags = getSafetyTags(ex);
+    if (profile?.avoidHighIap && tags.includes('highIap')) return false;
+    if (profile?.avoidHighImpact && tags.includes('highImpact')) return false;
+    return true;
+  });
+  return filtered.length > 0 ? filtered : list;
+}
+
+function getRolePool(role, list) {
+  switch (role) {
+    case 'knee':
+      return list.filter(ex => ex.module === 'legs' && getRole(ex) === 'knee');
+    case 'hip':
+      return list.filter(ex => ex.module === 'legs' && getRole(ex) === 'hip');
+    case 'upper':
+      return list.filter(ex => ex.module === 'upper');
+    case 'core':
+      return list.filter(ex => ex.module === 'core');
+    case 'agility':
+      return list.filter(ex => ex.module === 'agility' || ex.module === 'cardio');
+    default:
+      return list;
+  }
 }
 
 /**
@@ -33,30 +82,37 @@ export function generatePlan(date, offset = 0) {
   }
 
   const weekNum = getWeekNumber(date);
+  const phase = getWeekPhase(date);
   const seed = dateSeed(date) + offset * 100;
   const pickedExercises = [];
+  const all = Object.values(EXERCISES).flat();
+  const safeAll = filterByProfile(all, TRAINING_PROFILE);
 
-  if (schedule.modules.length >= 3) {
-    // 综合日：每个模块选 1 个，共 3 个
-    schedule.modules.forEach((mod, i) => {
-      const pool = EXERCISES[mod];
-      pickedExercises.push(...pickExercises(pool, 1, weekNum, seed + i, pickedExercises));
-    });
-  } else {
-    // 普通训练日（2个模块）：第一个模块选 2 个，第二个选 1 个
-    const counts = [2, 1];
-    schedule.modules.forEach((mod, i) => {
-      const pool = EXERCISES[mod];
-      pickedExercises.push(...pickExercises(pool, counts[i], weekNum, seed + i, pickedExercises));
-    });
-  }
+  ROLE_ORDER.forEach((role, i) => {
+    const safePool = getRolePool(role, safeAll);
+    const fallbackPool = getRolePool(role, all);
+    const pool = safePool.length > 0 ? safePool : fallbackPool;
+    pickedExercises.push(...pickExercises(pool, 1, weekNum, seed + i, pickedExercises));
+  });
+
+  const finalizedExercises = pickedExercises.map(ex => {
+    const role = getRole(ex);
+    const tags = getSafetyTags(ex);
+    const tuned = applyProgression(ex, role, phase);
+    return {
+      ...tuned,
+      role,
+      roleLabel: ROLE_LABELS[role],
+      selectionReason: buildSelectionReason(ex, role, tags, TRAINING_PROFILE),
+    };
+  });
 
   return {
     isTrainingDay: true,
     theme: schedule.theme,
     modules: schedule.modules,
     warmup: WARMUP,
-    exercises: pickedExercises,
+    exercises: finalizedExercises,
     cooldown: COOLDOWN,
     date,
   };
