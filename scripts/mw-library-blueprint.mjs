@@ -63,3 +63,19 @@ export const COOLDOWN_BLUEPRINT = [
   { stepType: 'cooldown', focus: 'general', query: 'Adductor Stretch Seated Bilateral Static', name: '内收肌静态拉伸', duration: '30秒' },
   { stepType: 'cooldown', focus: 'general', query: 'Chest Stretch Variation Three', name: '胸肩放松拉伸', duration: '30秒/侧' },
 ];
+
+export const BADMINTON_WARMUP_BLUEPRINT = [
+  { stepType: 'warmup', focus: 'general', query: 'High Knees', name: '原地高抬腿', duration: '40秒' },
+  { stepType: 'warmup', focus: 'upper', query: 'Arm Circles', name: '肩部大绕环', duration: '40秒' },
+  { stepType: 'warmup', focus: 'core', query: 'Lunge with Twist', name: '动态弓步转体', duration: '40秒' },
+  { stepType: 'warmup', focus: 'upper', query: 'Cable Wood Chop', name: '挥拍发力模拟', duration: '40秒/侧' },
+  { stepType: 'warmup', focus: 'agility', query: 'Lateral Shuffle', name: '交叉防守滑步', duration: '40秒' },
+];
+
+export const BADMINTON_COOLDOWN_BLUEPRINT = [
+  { stepType: 'cooldown', focus: 'legs', query: 'Calf Stretch On Box Bilateral', name: '小腿静态拉伸', duration: '30秒' },
+  { stepType: 'cooldown', focus: 'legs', query: 'Soleus Stretch', name: '跟腱与比目鱼肌放松', duration: '30秒/侧' },
+  { stepType: 'cooldown', focus: 'legs', query: 'Hamstring Stretch Supine Static', name: '大腿后侧拉伸', duration: '30秒/侧' },
+  { stepType: 'cooldown', focus: 'upper', query: 'Wrist Flexor Stretch', name: '手腕及前臂舒缓', duration: '30秒/侧' },
+  { stepType: 'cooldown', focus: 'upper', query: 'Chest Stretch Variation Two', name: '肩胸前侧放松', duration: '30秒/侧' },
+];

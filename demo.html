@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>动作预览 Demo v2</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", sans-serif;
+    background: #f3f4f6;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .card {
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  }
+  .card-header {
+    padding: 16px 20px;
+    background: #059669;
+    color: #fff;
+  }
+  .card-header h2 { font-size: 20px; margin-bottom: 4px; }
+  .tags { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 6px; }
+  .tag {
+    display: inline-block;
+    background: rgba(255,255,255,0.2);
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-size: 13px;
+  }
+  .video-container {
+    width: 100%;
+    background: #1a1a2e;
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+  }
+  .video-container video {
+    width: 50%;
+    display: block;
+  }
+  .card-body { padding: 20px; }
+  .meta {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+  .meta-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    color: #6b7280;
+  }
+  .meta-item strong { color: #111827; }
+  .section { margin-bottom: 16px; }
+  .section-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 8px;
+  }
+  .tips { list-style: none; padding: 0; }
+  .tips li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #374151;
+    line-height: 1.5;
+  }
+  .tips li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #059669;
+    font-weight: bold;
+  }
+  .mistakes li::before {
+    content: "✗";
+    color: #ef4444;
+  }
+  h1 { color: #111827; font-size: 24px; }
+  .note { color: #6b7280; font-size: 14px; max-width: 400px; text-align: center; line-height: 1.6; }
+</style>
+</head>
+<body>
+
+<h1>MuscleWiki MP4 动图效果预览</h1>
+<p class="note">下面是用 MuscleWiki 的短视频做的效果，自动播放、循环、无声，体验跟动图一样</p>
+
+<div class="card">
+  <div class="card-header">
+    <h2>杠铃深蹲</h2>
+    <div class="tags">
+      <span class="tag">下肢爆发力</span>
+      <span class="tag">杠铃</span>
+      <span class="tag">股四头肌</span>
+    </div>
+  </div>
+
+  <div class="video-container">
+    <video autoplay loop muted playsinline>
+      <source src="https://media.musclewiki.com/media/uploads/videos/branded/male-Barbell-barbell-squat-side.mp4" type="video/mp4">
+    </video>
+    <video autoplay loop muted playsinline>
+      <source src="https://media.musclewiki.com/media/uploads/videos/branded/male-Barbell-barbell-squat-front.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="card-body">
+    <div class="meta">
+      <div class="meta-item"><strong>4组</strong> × 8-12次</div>
+      <div class="meta-item">休息 <strong>90秒</strong></div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">动作要领</div>
+      <ul class="tips">
+        <li>双脚与肩同宽，脚尖略外展约30°</li>
+        <li>杠铃置于斜方肌上，不要压在颈椎</li>
+        <li>下蹲时膝盖方向与脚尖一致，不要内扣</li>
+        <li>蹲至大腿与地面平行或略低，臀部后坐</li>
+        <li>起身时脚跟发力蹬地，核心全程收紧</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <div class="section-title">常见错误</div>
+      <ul class="tips mistakes">
+        <li>膝盖内扣（伤膝盖韧带）</li>
+        <li>起身时弓背（腰椎代偿，容易伤腰）</li>
+        <li>重心前移到脚尖（失去平衡）</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

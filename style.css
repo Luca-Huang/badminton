@@ -641,3 +641,13 @@ body {
   font-weight: 700;
 }
 .cal-day.today.completed { border: none; }
+
+/* ========== BADMINTON ========== */
+.badminton-header {
+  background: linear-gradient(135deg, var(--bg) 0%, #064e3b 100%);
+  border-bottom: 1px solid var(--primary);
+}
+.badminton-header .theme {
+  color: #34d399;
+}
+

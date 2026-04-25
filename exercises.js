@@ -1,4 +1,4 @@
-import { EXERCISES_MW, WARMUP_MW, COOLDOWN_MW } from './data/exercises.mw.js';
+import { EXERCISES_MW, WARMUP_MW, COOLDOWN_MW, BADMINTON_WARMUP_MW, BADMINTON_COOLDOWN_MW } from './data/exercises.mw.js';
 
 export const MODULES = {
   core: { name: '核心旋转力量', icon: '🎯', color: '#f59e0b' },
@@ -12,6 +12,8 @@ export const MODULES = {
 export const EXERCISES = EXERCISES_MW;
 export const WARMUP_STEPS = WARMUP_MW;
 export const COOLDOWN_STEPS = COOLDOWN_MW;
+export const BADMINTON_WARMUP_STEPS = BADMINTON_WARMUP_MW;
+export const BADMINTON_COOLDOWN_STEPS = BADMINTON_COOLDOWN_MW;
 
 export const WARMUP = {
   name: '动态热身',
@@ -41,7 +43,9 @@ export const COOLDOWN = {
 
 // 训练日安排：星期几 → 模块组合（0=周日, 1=周一...）
 export const WEEKLY_SCHEDULE = {
+  0: { isBadminton: true, theme: '羽毛球实战' },
   1: { modules: ['core', 'legs'], theme: '核心 + 下肢爆发' },
+  2: { isBadminton: true, theme: '羽毛球实战' },
   3: { modules: ['agility', 'cardio'], theme: '敏捷 + 体能' },
   4: { modules: ['legs', 'upper'], theme: '下肢 + 肩臂' },
   6: { modules: ['core', 'agility', 'cardio'], theme: '综合训练' },

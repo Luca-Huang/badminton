@@ -1,4 +1,4 @@
-import { EXERCISES, WEEKLY_SCHEDULE, WARMUP, COOLDOWN, WARMUP_STEPS, COOLDOWN_STEPS } from './exercises.js';
+import { EXERCISES, WEEKLY_SCHEDULE, WARMUP, COOLDOWN, WARMUP_STEPS, COOLDOWN_STEPS, BADMINTON_WARMUP_STEPS, BADMINTON_COOLDOWN_STEPS } from './exercises.js';
 import { getRole, getSafetyTags, buildSelectionReason, ROLE_LABELS } from './exercise-profile.js';
 
 const TRAINING_PROFILE = {
@@ -142,9 +142,27 @@ export function generatePlan(date, offset = 0) {
     };
   }
 
+  const seed = dateSeed(date) + offset * 100;
+
+  if (schedule.isBadminton) {
+    const warmup = { ...WARMUP, steps: BADMINTON_WARMUP_STEPS };
+    const cooldown = { ...COOLDOWN, steps: BADMINTON_COOLDOWN_STEPS };
+    
+    return {
+      isTrainingDay: true,
+      isBadmintonDay: true,
+      theme: schedule.theme,
+      modules: [],
+      warmup,
+      exercises: [],
+      cooldown,
+      estimatedTotalMinutes: warmup.duration + cooldown.duration + 120,
+      date,
+    };
+  }
+
   const weekNum = getWeekNumber(date);
   const phase = getWeekPhase(date);
-  const seed = dateSeed(date) + offset * 100;
   const pickedExercises = [];
   const all = Object.values(EXERCISES).flat();
   const safeAll = filterByProfile(all, TRAINING_PROFILE);

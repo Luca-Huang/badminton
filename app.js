@@ -68,14 +68,14 @@ function renderTrainingDay() {
 
   return `
     <div class="nav-bar"><div class="settings-icon" id="btn-settings">⚙️</div></div>
-    <div class="header">
+    <div class="header ${currentPlan.isBadmintonDay ? 'badminton-header' : ''}">
       <div class="date">${formatDate(currentPlan.date)} &nbsp;🔥 ${getStreak()}天连续</div>
-      <div class="theme">${theme}</div>
+      <div class="theme">${currentPlan.isBadmintonDay ? '🏸 ' : ''}${theme}</div>
       <div class="meta-row">
         <span>⏱ 约${totalMin}分钟</span>
-        <button class="refresh-btn" id="btn-refresh">🔄 换一组</button>
+        ${currentPlan.isBadmintonDay ? '' : `<button class="refresh-btn" id="btn-refresh">🔄 换一组</button>`}
       </div>
-      <div class="safety-note">顺畅呼吸，避免憋气发力</div>
+      <div class="safety-note">${currentPlan.isBadmintonDay ? '畅快流汗，打球前注意充分热身，防止伤病发生' : '顺畅呼吸，避免憋气发力'}</div>
     </div>
     <div class="cards-container">
       ${renderWarmupCard(warmup)}
@@ -530,7 +530,7 @@ function renderCalendar() {
     const d    = new Date(calYear, calMonth, day);
     const key  = dateKey(d);
     const dow  = d.getDay();
-    const isTraining = [1,3,4,6].includes(dow);
+    const isTraining = [0,1,2,3,4,6].includes(dow);
     const isCompleted = data.history?.[key]?.completed;
     const isToday = d.toDateString() === now.toDateString();
 
@@ -574,7 +574,7 @@ function isCompleted(date) {
   return loadData().history?.[dateKey(date)]?.completed || false;
 }
 function getStreak() {
-  const training = [1,3,4,6];
+  const training = [0,1,2,3,4,6];
   let streak = 0;
   const d = new Date();
   // 若今天是训练日且未完成，从昨天开始算
